@@ -12,7 +12,7 @@ public class MoreCrops {
 	public static final  String modid = "morecrops";
 	public static final String verid = "1.0";
 	public static final String name = "More Crops";
-	public static final String depends = "";//"required-before:zcore@[0.0.7,)";
+	public static final String depends = "";
 	
 	@SidedProxy(clientSide="zdoctor.zcore.proxy.ClientProxy", serverSide="zdoctor.zcore.proxy.ServerProxy")
 	public static CommonProxy proxy;

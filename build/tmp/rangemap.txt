@@ -11,14 +11,14 @@ Class Start: zdoctor.morecrops.MoreCrops
    @|zdoctor\morecrops\MoreCrops.java|578|582|name|field|zdoctor.morecrops.MoreCrops|name|
    @|zdoctor\morecrops\MoreCrops.java|620|626|String|class|java.lang.String
    @|zdoctor\morecrops\MoreCrops.java|627|634|depends|field|zdoctor.morecrops.MoreCrops|depends|
-   @|zdoctor\morecrops\MoreCrops.java|798|809|CommonProxy|class|zdoctor.zcore.proxy.CommonProxy
-   @|zdoctor\morecrops\MoreCrops.java|810|815|proxy|field|zdoctor.morecrops.MoreCrops|proxy|
+   @|zdoctor\morecrops\MoreCrops.java|763|774|CommonProxy|class|zdoctor.zcore.proxy.CommonProxy
+   @|zdoctor\morecrops\MoreCrops.java|775|780|proxy|field|zdoctor.morecrops.MoreCrops|proxy|
    Method Start: preFore(Lnet/minecraftforge/fml/common/event/FMLConstructionEvent;)V
-      @|zdoctor\morecrops\MoreCrops.java|847|854|preFore|method|zdoctor.morecrops.MoreCrops|preFore|(Lnet/minecraftforge/fml/common/event/FMLConstructionEvent;)V
-      @|zdoctor\morecrops\MoreCrops.java|855|875|FMLConstructionEvent|class|net.minecraftforge.fml.common.event.FMLConstructionEvent
-      @|zdoctor\morecrops\MoreCrops.java|876|877|e|param|zdoctor.morecrops.MoreCrops|preFore|(Lnet/minecraftforge/fml/common/event/FMLConstructionEvent;)V|e|0
-      @|zdoctor\morecrops\MoreCrops.java|882|887|Crops|class|zdoctor.morecrops.crops.Crops
-      @|zdoctor\morecrops\MoreCrops.java|888|892|load|method|zdoctor.morecrops.crops.Crops|load|()V
+      @|zdoctor\morecrops\MoreCrops.java|812|819|preFore|method|zdoctor.morecrops.MoreCrops|preFore|(Lnet/minecraftforge/fml/common/event/FMLConstructionEvent;)V
+      @|zdoctor\morecrops\MoreCrops.java|820|840|FMLConstructionEvent|class|net.minecraftforge.fml.common.event.FMLConstructionEvent
+      @|zdoctor\morecrops\MoreCrops.java|841|842|e|param|zdoctor.morecrops.MoreCrops|preFore|(Lnet/minecraftforge/fml/common/event/FMLConstructionEvent;)V|e|0
+      @|zdoctor\morecrops\MoreCrops.java|847|852|Crops|class|zdoctor.morecrops.crops.Crops
+      @|zdoctor\morecrops\MoreCrops.java|853|857|load|method|zdoctor.morecrops.crops.Crops|load|()V
    Method End: preFore(Lnet/minecraftforge/fml/common/event/FMLConstructionEvent;)V
 Class End  : zdoctor.morecrops.MoreCrops
 endProcessing zdoctor\morecrops\MoreCrops.java
