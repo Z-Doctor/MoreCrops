@@ -1,6 +1,6 @@
 {
-    "parent":"zcore:item/standard_item",
+    "parent":"morecrops:item/standard_item",
     "textures": {
-        "layer0":"zcore:seeds/diamondseed"
+        "layer0":"morecrops:seeds/DiamondSeed"
     }
 }

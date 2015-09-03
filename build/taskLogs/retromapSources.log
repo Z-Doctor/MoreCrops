@@ -33001,8 +33001,19 @@ Warning: zdoctor\morecrops\crops\Crops.java has CRLF line endings; consider swit
 [method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
 Rename class net/minecraft/init/Items[366,371]::Items->Items
 Rename field net/minecraft/init/Items/diamond[372,379]::diamond->field_151045_i
-Rename class net/minecraft/block/Block[461,466]::Block->Block
-Rename class net/minecraft/item/Item[497,501]::Item->Item
+[method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
+Rename class net/minecraft/init/Items[509,514]::Items->Items
+Rename field net/minecraft/init/Items/emerald[515,522]::emerald->field_151166_bC
+[method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
+Rename class net/minecraft/init/Items[647,652]::Items->Items
+Rename field net/minecraft/init/Items/iron_ingot[653,663]::iron_ingot->field_151042_j
+[method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
+Rename class net/minecraft/init/Items[781,786]::Items->Items
+Rename field net/minecraft/init/Items/gold_ingot[787,797]::gold_ingot->field_151043_k
+Rename class net/minecraft/block/Block[874,879]::Block->Block
+Rename class net/minecraft/block/Block[909,914]::Block->Block
+Rename class net/minecraft/block/Block[944,949]::Block->Block
+Rename class net/minecraft/block/Block[976,981]::Block->Block
 Import: net.minecraft.block.Block
 Import: net.minecraft.init.Items
 Import: net.minecraft.item.Item

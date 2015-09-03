@@ -14,9 +14,6 @@ public class MoreCrops {
 	public static final String name = "More Crops";
 	public static final String depends = "";
 	
-	@SidedProxy(clientSide="zdoctor.zcore.proxy.ClientProxy", serverSide="zdoctor.zcore.proxy.ServerProxy")
-	public static CommonProxy proxy;
-	
 	@EventHandler
 	public void preFore(FMLConstructionEvent e){
 		Crops.load();
