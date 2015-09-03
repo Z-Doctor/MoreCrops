@@ -1,0 +1,16 @@
+[
+{
+  "modid":"morecrops",
+  "name": "More Crops",
+  "description": "All the crops you would have never needed or wanted. This mod shows the potential of ZCore (required).",
+  "version": "1.0",
+  "mcversion": "1.8",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ZDoctor"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

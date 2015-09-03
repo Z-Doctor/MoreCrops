@@ -1,0 +1,48 @@
+Symbol range map extraction starting
+Processing 2 files
+processing zdoctor\morecrops\MoreCrops.java
+@|zdoctor\morecrops\MoreCrops.java|8|25|zdoctor.morecrops|package|zdoctor.morecrops|(file)
+Class Start: zdoctor.morecrops.MoreCrops
+   @|zdoctor\morecrops\MoreCrops.java|479|485|String|class|java.lang.String
+   @|zdoctor\morecrops\MoreCrops.java|486|491|modid|field|zdoctor.morecrops.MoreCrops|modid|
+   @|zdoctor\morecrops\MoreCrops.java|528|534|String|class|java.lang.String
+   @|zdoctor\morecrops\MoreCrops.java|535|540|verid|field|zdoctor.morecrops.MoreCrops|verid|
+   @|zdoctor\morecrops\MoreCrops.java|571|577|String|class|java.lang.String
+   @|zdoctor\morecrops\MoreCrops.java|578|582|name|field|zdoctor.morecrops.MoreCrops|name|
+   @|zdoctor\morecrops\MoreCrops.java|620|626|String|class|java.lang.String
+   @|zdoctor\morecrops\MoreCrops.java|627|634|depends|field|zdoctor.morecrops.MoreCrops|depends|
+   @|zdoctor\morecrops\MoreCrops.java|798|809|CommonProxy|class|zdoctor.zcore.proxy.CommonProxy
+   @|zdoctor\morecrops\MoreCrops.java|810|815|proxy|field|zdoctor.morecrops.MoreCrops|proxy|
+   Method Start: preFore(Lnet/minecraftforge/fml/common/event/FMLConstructionEvent;)V
+      @|zdoctor\morecrops\MoreCrops.java|847|854|preFore|method|zdoctor.morecrops.MoreCrops|preFore|(Lnet/minecraftforge/fml/common/event/FMLConstructionEvent;)V
+      @|zdoctor\morecrops\MoreCrops.java|855|875|FMLConstructionEvent|class|net.minecraftforge.fml.common.event.FMLConstructionEvent
+      @|zdoctor\morecrops\MoreCrops.java|876|877|e|param|zdoctor.morecrops.MoreCrops|preFore|(Lnet/minecraftforge/fml/common/event/FMLConstructionEvent;)V|e|0
+      @|zdoctor\morecrops\MoreCrops.java|882|887|Crops|class|zdoctor.morecrops.crops.Crops
+      @|zdoctor\morecrops\MoreCrops.java|888|892|load|method|zdoctor.morecrops.crops.Crops|load|()V
+   Method End: preFore(Lnet/minecraftforge/fml/common/event/FMLConstructionEvent;)V
+Class End  : zdoctor.morecrops.MoreCrops
+endProcessing zdoctor\morecrops\MoreCrops.java
+
+processing zdoctor\morecrops\crops\Crops.java
+@|zdoctor\morecrops\crops\Crops.java|8|31|zdoctor.morecrops.crops|package|zdoctor.morecrops.crops|(file)
+Class Start: zdoctor.morecrops.crops.Crops
+   Method Start: load()V
+      @|zdoctor\morecrops\crops\Crops.java|287|291|load|method|zdoctor.morecrops.crops.Crops|load|()V
+      @|zdoctor\morecrops\crops\Crops.java|298|310|plantDiamond|field|zdoctor.morecrops.crops.Crops|plantDiamond
+      @|zdoctor\morecrops\crops\Crops.java|317|325|EasyCrop|class|zdoctor.zcore.common.EasyCrop
+      @|zdoctor\morecrops\crops\Crops.java|341|350|MoreCrops|class|zdoctor.morecrops.MoreCrops
+      @|zdoctor\morecrops\crops\Crops.java|351|356|modid|field|zdoctor.morecrops.MoreCrops|modid
+      @|zdoctor\morecrops\crops\Crops.java|358|365|setCrop|method|zdoctor.zcore.common.EasyCrop|setCrop|(Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;
+      @|zdoctor\morecrops\crops\Crops.java|366|371|Items|class|net.minecraft.init.Items
+      @|zdoctor\morecrops\crops\Crops.java|372|379|diamond|field|net.minecraft.init.Items|diamond
+      @|zdoctor\morecrops\crops\Crops.java|389|397|EasySeed|class|zdoctor.zcore.common.EasySeed
+      @|zdoctor\morecrops\crops\Crops.java|413|422|MoreCrops|class|zdoctor.morecrops.MoreCrops
+      @|zdoctor\morecrops\crops\Crops.java|423|428|modid|field|zdoctor.morecrops.MoreCrops|modid
+   Method End: load()V
+   @|zdoctor\morecrops\crops\Crops.java|454|459|Block|class|net.minecraft.block.Block
+   @|zdoctor\morecrops\crops\Crops.java|460|472|plantDiamond|field|zdoctor.morecrops.crops.Crops|plantDiamond|
+   @|zdoctor\morecrops\crops\Crops.java|490|494|Item|class|net.minecraft.item.Item
+   @|zdoctor\morecrops\crops\Crops.java|495|506|diamondseed|field|zdoctor.morecrops.crops.Crops|diamondseed|
+Class End  : zdoctor.morecrops.crops.Crops
+endProcessing zdoctor\morecrops\crops\Crops.java
+

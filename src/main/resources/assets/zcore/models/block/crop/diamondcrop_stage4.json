@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "zcore:crops/diamondcrop_stage_4"
+    }
+}
