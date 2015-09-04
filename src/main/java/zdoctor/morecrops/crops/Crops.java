@@ -1,23 +1,31 @@
 package zdoctor.morecrops.crops;
 
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import zdoctor.morecrops.MoreCrops;
+import net.minecraft.item.ItemStack;
+import zdoctor.zcore.ZCore;
 import zdoctor.zcore.common.EasyCrop;
 import zdoctor.zcore.common.EasySeed;
 
 public class Crops {
 	public static void load() {
-		plantDiamond = new EasyCrop("DiamondCrop", MoreCrops.modid).setCrop(Items.diamond,
-				new EasySeed("DiamondSeed", MoreCrops.modid));
-		plantEmerald = new EasyCrop("EmeraldCrop", MoreCrops.modid).setCrop(Items.emerald,
-				new EasySeed("EmeraldSeed", MoreCrops.modid));
-		plantIron = new EasyCrop("IronCrop", MoreCrops.modid).setCrop(Items.iron_ingot,
-				new EasySeed("IronSeed", MoreCrops.modid));
-		plantGold = new EasyCrop("GoldCrop", MoreCrops.modid).setCrop(Items.gold_ingot,
-				new EasySeed("GoldSeed", MoreCrops.modid));
+		plantDiamond = new EasyCrop("DiamondCrop", ZCore.modid).setCrop(Items.diamond,
+				new EasySeed("DiamondSeed", ZCore.modid).setRecipe(new Object[] {
+						"DDD", "DND", "DDD", 'D', Blocks.diamond_block, 'N', Items.nether_star
+				}));
+		plantEmerald = new EasyCrop("EmeraldCrop", ZCore.modid).setCrop(Items.emerald,
+				new EasySeed("EmeraldSeed", ZCore.modid).setRecipe(new Object[] {
+						"EEE", "ENE", "EEE", 'E', Blocks.emerald_block, 'N', Items.nether_star
+				}));
+		plantIron = new EasyCrop("IronCrop", ZCore.modid).setCrop(Items.iron_ingot,
+				new EasySeed("IronSeed", ZCore.modid).setRecipe(new Object[] {
+						"III", "INI", "III", 'I', Blocks.iron_block, 'N', Items.nether_star
+				}));
+		plantGold = new EasyCrop("GoldCrop", ZCore.modid).setCrop(Items.gold_ingot,
+				new EasySeed("GoldSeed", ZCore.modid).setRecipe(new Object[] {
+						"G", "GNG", "GGG", 'G', Blocks.gold_block, 'N', Items.nether_star
+				}));
 		
 	}
 	

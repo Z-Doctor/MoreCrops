@@ -1,6 +1,0 @@
-{
-    "parent": "block/crop",
-    "textures": {
-        "crop": "morecrops:crops/DiamondCrop_stage_0"
-    }
-}
