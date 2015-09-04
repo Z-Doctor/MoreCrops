@@ -24,7 +24,7 @@ public class Crops {
 				}));
 		plantGold = new EasyCrop("GoldCrop", ZCore.modid).setCrop(Items.gold_ingot,
 				new EasySeed("GoldSeed", ZCore.modid).setRecipe(new Object[] {
-						"G", "GNG", "GGG", 'G', Blocks.gold_block, 'N', Items.nether_star
+						"GGG", "GNG", "GGG", 'G', Blocks.gold_block, 'N', Items.nether_star
 				}));
 		
 	}

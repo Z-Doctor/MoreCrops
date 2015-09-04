@@ -32999,24 +32999,45 @@ Start Processing: zdoctor\morecrops\crops\Crops.java
 Warning: zdoctor\morecrops\crops\Crops.java has CRLF line endings; consider switching to LF
 [method, zdoctor/morecrops/crops/Crops/load, ()V]
 [method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
-Rename class net/minecraft/init/Items[366,371]::Items->Items
-Rename field net/minecraft/init/Items/diamond[372,379]::diamond->field_151045_i
+Rename class net/minecraft/init/Items[393,398]::Items->Items
+Rename field net/minecraft/init/Items/diamond[399,406]::diamond->field_151045_i
+[method, zdoctor/zcore/common/EasyItem/setRecipe, ([Ljava/lang/Object;)Lzdoctor/zcore/common/EasyItem;]
+Rename class net/minecraft/init/Blocks[517,523]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/diamond_block[524,537]::diamond_block->field_150484_ah
+Rename class net/minecraft/init/Items[546,551]::Items->Items
+Rename field net/minecraft/init/Items/nether_star[552,563]::nether_star->field_151156_bN
 [method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
-Rename class net/minecraft/init/Items[509,514]::Items->Items
-Rename field net/minecraft/init/Items/emerald[515,522]::emerald->field_151166_bC
+Rename class net/minecraft/init/Items[643,648]::Items->Items
+Rename field net/minecraft/init/Items/emerald[649,656]::emerald->field_151166_bC
+[method, zdoctor/zcore/common/EasyItem/setRecipe, ([Ljava/lang/Object;)Lzdoctor/zcore/common/EasyItem;]
+Rename class net/minecraft/init/Blocks[768,774]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/emerald_block[775,788]::emerald_block->field_150475_bE
+Rename class net/minecraft/init/Items[797,802]::Items->Items
+Rename field net/minecraft/init/Items/nether_star[803,814]::nether_star->field_151156_bN
 [method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
-Rename class net/minecraft/init/Items[647,652]::Items->Items
-Rename field net/minecraft/init/Items/iron_ingot[653,663]::iron_ingot->field_151042_j
+Rename class net/minecraft/init/Items[888,893]::Items->Items
+Rename field net/minecraft/init/Items/iron_ingot[894,904]::iron_ingot->field_151042_j
+[method, zdoctor/zcore/common/EasyItem/setRecipe, ([Ljava/lang/Object;)Lzdoctor/zcore/common/EasyItem;]
+Rename class net/minecraft/init/Blocks[1009,1015]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/iron_block[1016,1026]::iron_block->field_150339_S
+Rename class net/minecraft/init/Items[1037,1042]::Items->Items
+Rename field net/minecraft/init/Items/nether_star[1043,1054]::nether_star->field_151156_bN
 [method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
-Rename class net/minecraft/init/Items[781,786]::Items->Items
-Rename field net/minecraft/init/Items/gold_ingot[787,797]::gold_ingot->field_151043_k
-Rename class net/minecraft/block/Block[874,879]::Block->Block
-Rename class net/minecraft/block/Block[909,914]::Block->Block
-Rename class net/minecraft/block/Block[944,949]::Block->Block
-Rename class net/minecraft/block/Block[976,981]::Block->Block
+Rename class net/minecraft/init/Items[1128,1133]::Items->Items
+Rename field net/minecraft/init/Items/gold_ingot[1134,1144]::gold_ingot->field_151043_k
+[method, zdoctor/zcore/common/EasyItem/setRecipe, ([Ljava/lang/Object;)Lzdoctor/zcore/common/EasyItem;]
+Rename class net/minecraft/init/Blocks[1247,1253]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/gold_block[1254,1264]::gold_block->field_150340_R
+Rename class net/minecraft/init/Items[1275,1280]::Items->Items
+Rename field net/minecraft/init/Items/nether_star[1281,1292]::nether_star->field_151156_bN
+Rename class net/minecraft/block/Block[1329,1334]::Block->Block
+Rename class net/minecraft/block/Block[1364,1369]::Block->Block
+Rename class net/minecraft/block/Block[1399,1404]::Block->Block
+Rename class net/minecraft/block/Block[1431,1436]::Block->Block
 Import: net.minecraft.block.Block
+Import: net.minecraft.init.Blocks
 Import: net.minecraft.init.Items
-Import: net.minecraft.item.Item
+Import: net.minecraft.item.ItemStack
 Adding 0 imports
 End  Processing: zdoctor\morecrops\crops\Crops.java
 

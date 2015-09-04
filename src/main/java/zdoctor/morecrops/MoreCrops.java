@@ -10,7 +10,7 @@ import zdoctor.zcore.proxy.CommonProxy;
 @Mod(modid = MoreCrops.modid, version = MoreCrops.verid, name = MoreCrops.name, dependencies = MoreCrops.depends)
 public class MoreCrops {
 	public static final  String modid = "morecrops";
-	public static final String verid = "1.0";
+	public static final String verid = "1.1";
 	public static final String name = "More Crops";
 	public static final String depends = "";
 	
