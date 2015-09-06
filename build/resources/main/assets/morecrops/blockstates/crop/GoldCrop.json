@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "morecrops:crop/GoldCrop/GoldCrop_stage0" },
+        "age=1": { "model": "morecrops:crop/GoldCrop/GoldCrop_stage1" },
+        "age=2": { "model": "morecrops:crop/GoldCrop/GoldCrop_stage2" },
+        "age=3": { "model": "morecrops:crop/GoldCrop/GoldCrop_stage3" },
+        "age=4": { "model": "morecrops:crop/GoldCrop/GoldCrop_stage4" },
+        "age=5": { "model": "morecrops:crop/GoldCrop/GoldCrop_stage5" },
+        "age=6": { "model": "morecrops:crop/GoldCrop/GoldCrop_stage6" },
+        "age=7": { "model": "morecrops:crop/GoldCrop/GoldCrop_stage7" }
+    }
+}

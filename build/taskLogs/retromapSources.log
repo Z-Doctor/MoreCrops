@@ -32992,52 +32992,696 @@ Warning: zdoctor\morecrops\MoreCrops.java has CRLF line endings; consider switch
 [method, zdoctor/morecrops/MoreCrops/preFore, (Lnet/minecraftforge/fml/common/event/FMLConstructionEvent;)V]
 No rename for class net/minecraftforge/fml/common/event/FMLConstructionEvent
 [method, zdoctor/morecrops/crops/Crops/load, ()V]
+[method, zdoctor/morecrops/MoreCrops/preInit, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPreInitializationEvent
+[method, zdoctor/zcore/proxy/CommonProxy/preInit, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+[method, zdoctor/morecrops/MoreCrops/init, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLInitializationEvent
+[method, zdoctor/zcore/proxy/CommonProxy/init, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+[method, zdoctor/morecrops/MoreCrops/postInit, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPostInitializationEvent
+[method, zdoctor/zcore/proxy/CommonProxy/postInit, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
 Adding 0 imports
 End  Processing: zdoctor\morecrops\MoreCrops.java
 
 Start Processing: zdoctor\morecrops\crops\Crops.java
 Warning: zdoctor\morecrops\crops\Crops.java has CRLF line endings; consider switching to LF
 [method, zdoctor/morecrops/crops/Crops/load, ()V]
+Rename method net/minecraft/block/Block/canPlaceBlockAt (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Z[754,769]::canPlaceBlockAt->func_176196_c
+Rename class net/minecraft/world/World[768,793]::net.minecraft.world.World->net.minecraft.world.World
+New Key: class net
+Rename class net/minecraft/util/BlockPos[803,830]::net.minecraft.util.BlockPos->net.minecraft.util.BlockPos
+New Key: class net
+[method, zdoctor/zcore/common/HelperFunctions/checkSurrondingsFor, (Lnet/minecraft/block/Block;Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Z]
+Rename class net/minecraft/init/Blocks[885,891]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/lava[892,896]::lava->field_150353_l
+Rename method net/minecraft/block/Block/canPlaceBlockAt (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Z[931,946]::canPlaceBlockAt->func_176196_c
+[method, zdoctor/zcore/common/EasyCrop/growsOn, (Lnet/minecraft/block/Block;)Lzdoctor/zcore/common/EasyCrop;]
+Rename class net/minecraft/init/Blocks[975,981]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/coal_block[982,992]::coal_block->field_150402_ci
 [method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
-Rename class net/minecraft/init/Items[393,398]::Items->Items
-Rename field net/minecraft/init/Items/diamond[399,406]::diamond->field_151045_i
+Rename class net/minecraft/init/Items[1007,1012]::Items->Items
+Rename field net/minecraft/init/Items/diamond[1013,1020]::diamond->field_151045_i
+Rename method net/minecraft/item/Item/onItemUse (Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;FFF)Z[1111,1120]::onItemUse->func_180614_a
+Rename class net/minecraft/item/ItemStack[1125,1134]::ItemStack->ItemStack
+Rename class net/minecraft/entity/player/EntityPlayer[1142,1154]::EntityPlayer->EntityPlayer
+Rename class net/minecraft/world/World[1165,1170]::World->World
+Rename class net/minecraft/util/BlockPos[1180,1188]::BlockPos->BlockPos
+Rename class net/minecraft/util/EnumFacing[1201,1211]::EnumFacing->EnumFacing
+[method, zdoctor/zcore/common/HelperFunctions/checkSurrondingsFor, (Lnet/minecraft/block/Block;Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Z]
+Rename class net/minecraft/init/Blocks[1301,1307]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/lava[1308,1312]::lava->field_150353_l
+Rename method net/minecraft/item/Item/onItemUse (Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;FFF)Z[1360,1369]::onItemUse->func_180614_a
 [method, zdoctor/zcore/common/EasyItem/setRecipe, ([Ljava/lang/Object;)Lzdoctor/zcore/common/EasyItem;]
-Rename class net/minecraft/init/Blocks[517,523]::Blocks->Blocks
-Rename field net/minecraft/init/Blocks/diamond_block[524,537]::diamond_block->field_150484_ah
-Rename class net/minecraft/init/Items[546,551]::Items->Items
-Rename field net/minecraft/init/Items/nether_star[552,563]::nether_star->field_151156_bN
+Rename class net/minecraft/init/Blocks[1515,1521]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/diamond_block[1522,1535]::diamond_block->field_150484_ah
+Rename class net/minecraft/init/Items[1544,1549]::Items->Items
+Rename field net/minecraft/init/Items/nether_star[1550,1561]::nether_star->field_151156_bN
+[method, zdoctor/zcore/common/EasyCrop/growsOn, (Lnet/minecraft/block/Block;)Lzdoctor/zcore/common/EasyCrop;]
+Rename class net/minecraft/init/Blocks[1582,1588]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/coal_block[1589,1599]::coal_block->field_150402_ci
 [method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
-Rename class net/minecraft/init/Items[643,648]::Items->Items
-Rename field net/minecraft/init/Items/emerald[649,656]::emerald->field_151166_bC
+Rename class net/minecraft/init/Items[1680,1685]::Items->Items
+Rename field net/minecraft/init/Items/emerald[1686,1693]::emerald->field_151166_bC
 [method, zdoctor/zcore/common/EasyItem/setRecipe, ([Ljava/lang/Object;)Lzdoctor/zcore/common/EasyItem;]
-Rename class net/minecraft/init/Blocks[768,774]::Blocks->Blocks
-Rename field net/minecraft/init/Blocks/emerald_block[775,788]::emerald_block->field_150475_bE
-Rename class net/minecraft/init/Items[797,802]::Items->Items
-Rename field net/minecraft/init/Items/nether_star[803,814]::nether_star->field_151156_bN
+Rename class net/minecraft/init/Blocks[1809,1815]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/emerald_block[1816,1829]::emerald_block->field_150475_bE
+Rename class net/minecraft/init/Items[1838,1843]::Items->Items
+Rename field net/minecraft/init/Items/nether_star[1844,1855]::nether_star->field_151156_bN
 [method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
-Rename class net/minecraft/init/Items[888,893]::Items->Items
-Rename field net/minecraft/init/Items/iron_ingot[894,904]::iron_ingot->field_151042_j
+Rename class net/minecraft/init/Items[1935,1940]::Items->Items
+Rename field net/minecraft/init/Items/iron_ingot[1941,1951]::iron_ingot->field_151042_j
 [method, zdoctor/zcore/common/EasyItem/setRecipe, ([Ljava/lang/Object;)Lzdoctor/zcore/common/EasyItem;]
-Rename class net/minecraft/init/Blocks[1009,1015]::Blocks->Blocks
-Rename field net/minecraft/init/Blocks/iron_block[1016,1026]::iron_block->field_150339_S
-Rename class net/minecraft/init/Items[1037,1042]::Items->Items
-Rename field net/minecraft/init/Items/nether_star[1043,1054]::nether_star->field_151156_bN
+Rename class net/minecraft/init/Blocks[2060,2066]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/iron_block[2067,2077]::iron_block->field_150339_S
+Rename class net/minecraft/init/Items[2088,2093]::Items->Items
+Rename field net/minecraft/init/Items/nether_star[2094,2105]::nether_star->field_151156_bN
 [method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
-Rename class net/minecraft/init/Items[1128,1133]::Items->Items
-Rename field net/minecraft/init/Items/gold_ingot[1134,1144]::gold_ingot->field_151043_k
+Rename class net/minecraft/init/Items[2185,2190]::Items->Items
+Rename field net/minecraft/init/Items/gold_ingot[2191,2201]::gold_ingot->field_151043_k
 [method, zdoctor/zcore/common/EasyItem/setRecipe, ([Ljava/lang/Object;)Lzdoctor/zcore/common/EasyItem;]
-Rename class net/minecraft/init/Blocks[1247,1253]::Blocks->Blocks
-Rename field net/minecraft/init/Blocks/gold_block[1254,1264]::gold_block->field_150340_R
-Rename class net/minecraft/init/Items[1275,1280]::Items->Items
-Rename field net/minecraft/init/Items/nether_star[1281,1292]::nether_star->field_151156_bN
-Rename class net/minecraft/block/Block[1329,1334]::Block->Block
-Rename class net/minecraft/block/Block[1364,1369]::Block->Block
-Rename class net/minecraft/block/Block[1399,1404]::Block->Block
-Rename class net/minecraft/block/Block[1431,1436]::Block->Block
-Import: net.minecraft.block.Block
+Rename class net/minecraft/init/Blocks[2310,2316]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/gold_block[2317,2327]::gold_block->field_150340_R
+Rename class net/minecraft/init/Items[2338,2343]::Items->Items
+Rename field net/minecraft/init/Items/nether_star[2344,2355]::nether_star->field_151156_bN
+Import: net.minecraft.entity.player.EntityPlayer
 Import: net.minecraft.init.Blocks
 Import: net.minecraft.init.Items
 Import: net.minecraft.item.ItemStack
+Import: net.minecraft.util.BlockPos
+Import: net.minecraft.util.EnumFacing
+Import: net.minecraft.world.World
 Adding 0 imports
 End  Processing: zdoctor\morecrops\crops\Crops.java
+
+Start Processing: zdoctor\zcore\common\EasyCrop.java
+Warning: zdoctor\zcore\common\EasyCrop.java has CRLF line endings; consider switching to LF
+Rename class net/minecraft/block/properties/PropertyInteger[1231,1246]::PropertyInteger->PropertyInteger
+Rename class net/minecraft/block/properties/PropertyInteger[1253,1268]::PropertyInteger->PropertyInteger
+Rename method net/minecraft/block/properties/PropertyInteger/create (Ljava/lang/String;II)Lnet/minecraft/block/properties/PropertyInteger;[1269,1275]::create->func_177719_a
+Rename class net/minecraft/item/Item[1316,1320]::Item->Item
+Rename class net/minecraft/item/Item[1345,1349]::Item->Item
+Rename class net/minecraft/block/Block[1373,1378]::Block->Block
+Rename class net/minecraft/init/Blocks[1390,1396]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/farmland[1397,1405]::farmland->field_150458_ak
+[method, zdoctor/zcore/common/EasyCrop/EasyCrop, (Ljava/lang/String;Ljava/lang/String;)V]
+FOUND CONSTR method zdoctor/zcore/common/EasyCrop/EasyCrop (Ljava/lang/String;Ljava/lang/String;)V zdoctor/zcore/common/EasyCrop
+Rename class net/minecraft/creativetab/CreativeTabs[1590,1602]::CreativeTabs->CreativeTabs
+[method, zdoctor/zcore/common/EasyCrop/EasyCrop, (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;)V]
+FOUND CONSTR method zdoctor/zcore/common/EasyCrop/EasyCrop (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;)V zdoctor/zcore/common/EasyCrop
+Rename class net/minecraft/creativetab/CreativeTabs[1658,1670]::CreativeTabs->CreativeTabs
+Rename method net/minecraft/block/Block/setDefaultState (Lnet/minecraft/block/state/IBlockState;)V[1741,1756]::setDefaultState->func_180632_j
+Rename field net/minecraft/block/Block/blockState[1760,1770]::blockState->field_176227_L
+Rename method net/minecraft/block/state/BlockState/getBaseState ()Lnet/minecraft/block/state/IBlockState;[1775,1787]::getBaseState->func_177621_b
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[1791,1803]::withProperty->func_177226_a
+[method, java/lang/Integer/valueOf, (I)Ljava/lang/Integer;]
+Rename method net/minecraft/block/Block/setTickRandomly (Z)Lnet/minecraft/block/Block;[1839,1854]::setTickRandomly->func_149675_a
+Rename method net/minecraft/block/Block/setBlockBounds (FFFFFF)V[1885,1899]::setBlockBounds->func_149676_a
+Rename method net/minecraft/block/Block/setHardness (F)Lnet/minecraft/block/Block;[1960,1971]::setHardness->func_149711_c
+Rename method net/minecraft/block/Block/setStepSound (Lnet/minecraft/block/Block$SoundType;)Lnet/minecraft/block/Block;[1988,2000]::setStepSound->func_149672_a
+Rename field net/minecraft/block/Block/soundTypeGrass[2002,2016]::soundTypeGrass->field_149779_h
+Rename method net/minecraft/block/Block/disableStats ()Lnet/minecraft/block/Block;[2026,2038]::disableStats->func_149649_H
+Rename method net/minecraft/block/Block/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;[2051,2065]::setCreativeTab->func_149647_a
+Rename method net/minecraft/block/Block/setUnlocalizedName (Ljava/lang/String;)Lnet/minecraft/block/Block;[2083,2101]::setUnlocalizedName->func_149663_c
+[method, zdoctor/zcore/common/EasyCrop/getModelPath, ()Ljava/lang/String;]
+[method, zdoctor/zcore/proxy/CommonProxy/subEvent, (Lzdoctor/zcore/common/ISubEvent;)V]
+[method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
+Rename class net/minecraft/item/Item[2187,2191]::Item->Item
+[method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
+Rename class net/minecraft/item/Item[2230,2234]::Item->Item
+[method, zdoctor/zcore/common/EasyCrop/setCrop, (Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Lzdoctor/zcore/common/EasyCrop;]
+Rename class net/minecraft/item/Item[2272,2276]::Item->Item
+Rename class net/minecraft/item/Item[2283,2287]::Item->Item
+[method, zdoctor/zcore/common/EasyCrop/growsOn, (Lnet/minecraft/block/Block;)Lzdoctor/zcore/common/EasyCrop;]
+Rename class net/minecraft/block/Block[2391,2396]::Block->Block
+[method, zdoctor/zcore/common/EasyCrop/getModelPath, ()Ljava/lang/String;]
+[method, zdoctor/zcore/common/EasyCrop/getBlockMeta, ()I]
+Rename class net/minecraft/item/Item[2664,2668]::Item->Item
+[method, zdoctor/zcore/common/EasyCrop/asItem, ()Lnet/minecraft/item/Item;]
+Rename class net/minecraft/item/Item[2690,2694]::Item->Item
+Rename method net/minecraft/item/Item/getItemFromBlock (Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;[2695,2711]::getItemFromBlock->func_150898_a
+[method, zdoctor/zcore/common/EasyCrop/registerRender, ()V]
+[method, zdoctor/zcore/common/EasyCrop/registerRender, (Ljava/lang/String;)V]
+[method, zdoctor/zcore/common/EasyCrop/getModelPath, ()Ljava/lang/String;]
+[method, zdoctor/zcore/common/EasyCrop/registerRender, (Ljava/lang/String;)V]
+[method, java/io/PrintStream/println, (Ljava/lang/String;)V]
+Rename class net/minecraft/client/Minecraft[3034,3043]::Minecraft->Minecraft
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[3044,3056]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/Minecraft/getRenderItem ()Lnet/minecraft/client/renderer/entity/RenderItem;[3059,3072]::getRenderItem->func_175599_af
+Rename method net/minecraft/client/renderer/entity/RenderItem/getItemModelMesher ()Lnet/minecraft/client/renderer/ItemModelMesher;[3076,3094]::getItemModelMesher->func_175037_a
+Rename method net/minecraft/client/renderer/ItemModelMesher/register (Lnet/minecraft/item/Item;ILnet/minecraft/client/resources/model/ModelResourceLocation;)V[3092,3100]::register->func_178086_a
+[method, zdoctor/zcore/common/EasyCrop/asItem, ()Lnet/minecraft/item/Item;]
+[method, zdoctor/zcore/common/EasyCrop/getBlockMeta, ()I]
+Rename class net/minecraft/client/resources/model/ModelResourceLocation[3151,3172]::ModelResourceLocation->ModelResourceLocation
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPreInitializationEvent
+[method, java/io/PrintStream/println, (Ljava/lang/String;)V]
+[method, zdoctor/zcore/common/EasyCrop/getModelPath, ()Ljava/lang/String;]
+No rename for class net/minecraftforge/fml/common/registry/GameRegistry
+[method, net/minecraftforge/fml/common/registry/GameRegistry/registerBlock, (Lnet/minecraft/block/Block;Ljava/lang/String;)Lnet/minecraft/block/Block;]
+No rename for method net/minecraftforge/fml/common/registry/GameRegistry/registerBlock (Lnet/minecraft/block/Block;Ljava/lang/String;)Lnet/minecraft/block/Block;
+[method, zdoctor/zcore/common/EasyCrop/getModelPath, ()Ljava/lang/String;]
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLInitializationEvent
+[method, net/minecraftforge/fml/common/event/FMLStateEvent/getSide, ()Lnet/minecraftforge/fml/relauncher/Side;]
+No rename for method net/minecraftforge/fml/common/event/FMLStateEvent/getSide ()Lnet/minecraftforge/fml/relauncher/Side;
+No rename for class net/minecraftforge/fml/relauncher/Side
+No rename for field net/minecraftforge/fml/relauncher/Side/CLIENT
+[method, zdoctor/zcore/common/EasyCrop/registerRender, ()V]
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPostInitializationEvent
+[method, zdoctor/zcore/common/EasySeed/setCrop, (Lnet/minecraft/block/Block;Lnet/minecraft/block/Block;)Lzdoctor/zcore/common/EasySeed;]
+Rename method net/minecraft/block/Block/canPlaceBlockAt (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Z[3695,3710]::canPlaceBlockAt->func_176196_c
+Rename class net/minecraft/world/World[3709,3714]::World->World
+Rename class net/minecraft/util/BlockPos[3724,3732]::BlockPos->BlockPos
+Rename method net/minecraft/block/BlockBush/canPlaceBlockOn (Lnet/minecraft/block/Block;)Z[3749,3764]::canPlaceBlockOn->func_149854_a
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[3771,3784]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[3790,3798]::getBlock->func_177230_c
+Rename method net/minecraft/block/BlockBush/canPlaceBlockOn (Lnet/minecraft/block/Block;)Z[3924,3939]::canPlaceBlockOn->func_149854_a
+Rename class net/minecraft/block/Block[3938,3943]::Block->Block
+Rename method net/minecraft/block/Block/updateTick (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;Ljava/util/Random;)V[4021,4031]::updateTick->func_180650_b
+Rename class net/minecraft/world/World[4035,4040]::World->World
+Rename class net/minecraft/util/BlockPos[4050,4058]::BlockPos->BlockPos
+Rename class net/minecraft/block/state/IBlockState[4064,4075]::IBlockState->IBlockState
+Rename method net/minecraft/block/Block/updateTick (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;Ljava/util/Random;)V[4116,4126]::updateTick->func_180650_b
+Rename method net/minecraft/world/World/getLightFromNeighbors (Lnet/minecraft/util/BlockPos;)I[4179,4200]::getLightFromNeighbors->func_175671_l
+Rename method net/minecraft/util/BlockPos/up ()Lnet/minecraft/util/BlockPos;[4197,4199]::up->func_177984_a
+Rename method net/minecraft/block/state/IBlockState/getValue (Lnet/minecraft/block/properties/IProperty;)Ljava/lang/Comparable;[4266,4274]::getValue->func_177229_b
+[method, java/lang/Number/intValue, ()I]
+[method, zdoctor/zcore/common/EasyCrop/getGrowthChance, (Lnet/minecraft/block/Block;Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)F]
+[method, java/util/Random/nextInt, (I)I]
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[4507,4520]::setBlockState->func_180501_a
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[4532,4544]::withProperty->func_177226_a
+[method, java/lang/Integer/valueOf, (I)Ljava/lang/Integer;]
+[method, zdoctor/zcore/common/EasyCrop/grow, (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;)V]
+Rename class net/minecraft/world/World[4650,4655]::World->World
+Rename class net/minecraft/util/BlockPos[4665,4673]::BlockPos->BlockPos
+Rename class net/minecraft/block/state/IBlockState[4679,4690]::IBlockState->IBlockState
+Rename method net/minecraft/block/state/IBlockState/getValue (Lnet/minecraft/block/properties/IProperty;)Ljava/lang/Comparable;[4736,4744]::getValue->func_177229_b
+[method, java/lang/Number/intValue, ()I]
+Rename class net/minecraft/util/MathHelper[4769,4779]::MathHelper->MathHelper
+Rename method net/minecraft/util/MathHelper/getRandomIntegerInRange (Ljava/util/Random;II)I[4780,4803]::getRandomIntegerInRange->func_76136_a
+Rename field net/minecraft/world/World/rand[4801,4805]::rand->field_73012_v
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z[4899,4912]::setBlockState->func_180501_a
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[4924,4936]::withProperty->func_177226_a
+[method, java/lang/Integer/valueOf, (I)Ljava/lang/Integer;]
+[method, zdoctor/zcore/common/EasyCrop/getGrowthChance, (Lnet/minecraft/block/Block;Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)F]
+Rename class net/minecraft/block/Block[5018,5023]::Block->Block
+Rename class net/minecraft/world/World[5033,5038]::World->World
+Rename class net/minecraft/util/BlockPos[5048,5056]::BlockPos->BlockPos
+Rename class net/minecraft/util/BlockPos[5100,5108]::BlockPos->BlockPos
+Rename method net/minecraft/util/BlockPos/down ()Lnet/minecraft/util/BlockPos;[5125,5129]::down->func_177977_b
+Rename class net/minecraft/block/state/IBlockState[5296,5307]::IBlockState->IBlockState
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[5330,5343]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/add (III)Lnet/minecraft/util/BlockPos;[5354,5357]::add->func_177982_a
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[5412,5420]::getBlock->func_177230_c
+[method, net/minecraft/block/Block/canSustainPlant, (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;Lnet/minecraftforge/common/IPlantable;)Z]
+No rename for method net/minecraft/block/Block/canSustainPlant (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;Lnet/minecraftforge/common/IPlantable;)Z
+Rename method net/minecraft/util/BlockPos/add (III)Lnet/minecraft/util/BlockPos;[5463,5466]::add->func_177982_a
+Rename class net/minecraft/util/EnumFacing[5487,5516]::net.minecraft.util.EnumFacing->net.minecraft.util.EnumFacing
+New Key: class net
+Rename field net/minecraft/util/EnumFacing/UP[5517,5519]::UP->UP
+No rename for class net/minecraftforge/common/IPlantable
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[5655,5663]::getBlock->func_177230_c
+[method, net/minecraft/block/Block/isFertile, (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Z]
+No rename for method net/minecraft/block/Block/isFertile (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Z
+Rename method net/minecraft/util/BlockPos/add (III)Lnet/minecraft/util/BlockPos;[5700,5703]::add->func_177982_a
+Rename class net/minecraft/util/BlockPos[5988,5996]::BlockPos->BlockPos
+Rename method net/minecraft/util/BlockPos/north ()Lnet/minecraft/util/BlockPos;[6013,6018]::north->func_177978_c
+Rename class net/minecraft/util/BlockPos[6038,6046]::BlockPos->BlockPos
+Rename method net/minecraft/util/BlockPos/south ()Lnet/minecraft/util/BlockPos;[6063,6068]::south->func_177968_d
+Rename class net/minecraft/util/BlockPos[6088,6096]::BlockPos->BlockPos
+Rename method net/minecraft/util/BlockPos/west ()Lnet/minecraft/util/BlockPos;[6113,6117]::west->func_177976_e
+Rename class net/minecraft/util/BlockPos[6138,6146]::BlockPos->BlockPos
+Rename method net/minecraft/util/BlockPos/east ()Lnet/minecraft/util/BlockPos;[6163,6167]::east->func_177974_f
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[6222,6235]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[6247,6255]::getBlock->func_177230_c
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[6285,6298]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[6310,6318]::getBlock->func_177230_c
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[6370,6383]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[6395,6403]::getBlock->func_177230_c
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[6433,6446]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[6458,6466]::getBlock->func_177230_c
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[6616,6629]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/north ()Lnet/minecraft/util/BlockPos;[6640,6645]::north->func_177978_c
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[6657,6665]::getBlock->func_177230_c
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[6695,6708]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/north ()Lnet/minecraft/util/BlockPos;[6719,6724]::north->func_177978_c
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[6736,6744]::getBlock->func_177230_c
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[6774,6787]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/south ()Lnet/minecraft/util/BlockPos;[6798,6803]::south->func_177968_d
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[6815,6823]::getBlock->func_177230_c
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[6853,6866]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/south ()Lnet/minecraft/util/BlockPos;[6877,6882]::south->func_177968_d
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[6894,6902]::getBlock->func_177230_c
+Rename method net/minecraft/block/BlockBush/canBlockStay (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z[7045,7057]::canBlockStay->func_180671_f
+Rename class net/minecraft/world/World[7059,7064]::World->World
+Rename class net/minecraft/util/BlockPos[7074,7082]::BlockPos->BlockPos
+Rename class net/minecraft/block/state/IBlockState[7088,7099]::IBlockState->IBlockState
+Rename method net/minecraft/world/World/getLight (Lnet/minecraft/util/BlockPos;)I[7137,7145]::getLight->func_175699_k
+Rename method net/minecraft/world/World/canSeeSky (Lnet/minecraft/util/BlockPos;)Z[7172,7181]::canSeeSky->func_175678_i
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[7203,7216]::getBlockState->func_180495_p
+Rename method net/minecraft/util/BlockPos/down ()Lnet/minecraft/util/BlockPos;[7221,7225]::down->func_177977_b
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[7238,7246]::getBlock->func_177230_c
+[method, net/minecraft/block/Block/canSustainPlant, (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;Lnet/minecraftforge/common/IPlantable;)Z]
+No rename for method net/minecraft/block/Block/canSustainPlant (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;Lnet/minecraftforge/common/IPlantable;)Z
+Rename method net/minecraft/util/BlockPos/down ()Lnet/minecraft/util/BlockPos;[7283,7287]::down->func_177977_b
+Rename class net/minecraft/util/EnumFacing[7300,7329]::net.minecraft.util.EnumFacing->net.minecraft.util.EnumFacing
+New Key: class net
+Rename field net/minecraft/util/EnumFacing/UP[7330,7332]::UP->UP
+Rename method net/minecraft/block/Block/canPlaceBlockAt (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Z[7346,7361]::canPlaceBlockAt->func_176196_c
+Rename method net/minecraft/util/BlockPos/down ()Lnet/minecraft/util/BlockPos;[7373,7377]::down->func_177977_b
+Rename class net/minecraft/item/Item[7412,7416]::Item->Item
+[method, zdoctor/zcore/common/EasyCrop/getSeed, ()Lnet/minecraft/item/Item;]
+Rename class net/minecraft/item/Item[7484,7488]::Item->Item
+[method, zdoctor/zcore/common/EasyCrop/getCrop, ()Lnet/minecraft/item/Item;]
+Rename method net/minecraft/block/Block/dropBlockAsItemWithChance (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;FI)V[7787,7812]::dropBlockAsItemWithChance->func_180653_a
+Rename class net/minecraft/world/World[7801,7806]::World->World
+Rename class net/minecraft/util/BlockPos[7816,7824]::BlockPos->BlockPos
+Rename class net/minecraft/block/state/IBlockState[7830,7841]::IBlockState->IBlockState
+Rename method net/minecraft/block/Block/dropBlockAsItemWithChance (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;FI)V[7896,7921]::dropBlockAsItemWithChance->func_180653_a
+Rename class net/minecraft/item/Item[8130,8134]::Item->Item
+Rename method net/minecraft/block/Block/getItemDropped (Lnet/minecraft/block/state/IBlockState;Ljava/util/Random;I)Lnet/minecraft/item/Item;[8135,8149]::getItemDropped->func_180660_a
+Rename class net/minecraft/block/state/IBlockState[8149,8160]::IBlockState->IBlockState
+Rename method net/minecraft/block/state/IBlockState/getValue (Lnet/minecraft/block/properties/IProperty;)Ljava/lang/Comparable;[8231,8239]::getValue->func_177229_b
+[method, java/lang/Number/intValue, ()I]
+[method, zdoctor/zcore/common/EasyCrop/getCrop, ()Lnet/minecraft/item/Item;]
+[method, zdoctor/zcore/common/EasyCrop/getSeed, ()Lnet/minecraft/item/Item;]
+Rename method net/minecraft/block/IGrowable/canGrow (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;Z)Z[8383,8390]::canGrow->func_176473_a
+Rename class net/minecraft/world/World[8397,8402]::World->World
+Rename class net/minecraft/util/BlockPos[8412,8420]::BlockPos->BlockPos
+Rename class net/minecraft/block/state/IBlockState[8426,8437]::IBlockState->IBlockState
+Rename method net/minecraft/block/state/IBlockState/getValue (Lnet/minecraft/block/properties/IProperty;)Ljava/lang/Comparable;[8500,8508]::getValue->func_177229_b
+[method, java/lang/Number/intValue, ()I]
+Rename method net/minecraft/block/IGrowable/canUseBonemeal (Lnet/minecraft/world/World;Ljava/util/Random;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z[8562,8576]::canUseBonemeal->func_180670_a
+Rename class net/minecraft/world/World[8576,8581]::World->World
+Rename class net/minecraft/util/BlockPos[8604,8612]::BlockPos->BlockPos
+Rename class net/minecraft/block/state/IBlockState[8618,8629]::IBlockState->IBlockState
+Rename class net/minecraft/item/Item[8709,8713]::Item->Item
+Rename method net/minecraft/block/Block/getItem (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/item/Item;[8714,8721]::getItem->func_180665_b
+Rename class net/minecraft/world/World[8728,8733]::World->World
+Rename class net/minecraft/util/BlockPos[8743,8751]::BlockPos->BlockPos
+[method, zdoctor/zcore/common/EasyCrop/getSeed, ()Lnet/minecraft/item/Item;]
+Rename method net/minecraft/block/IGrowable/grow (Lnet/minecraft/world/World;Ljava/util/Random;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;)V[8817,8821]::grow->func_176474_b
+Rename class net/minecraft/world/World[8831,8836]::World->World
+Rename class net/minecraft/util/BlockPos[8859,8867]::BlockPos->BlockPos
+Rename class net/minecraft/block/state/IBlockState[8873,8884]::IBlockState->IBlockState
+[method, zdoctor/zcore/common/EasyCrop/grow, (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;)V]
+Rename class net/minecraft/block/state/IBlockState[9039,9050]::IBlockState->IBlockState
+Rename method net/minecraft/block/Block/getStateFromMeta (I)Lnet/minecraft/block/state/IBlockState;[9051,9067]::getStateFromMeta->func_176203_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[9101,9116]::getDefaultState->func_176223_P
+Rename method net/minecraft/block/state/IBlockState/withProperty (Lnet/minecraft/block/properties/IProperty;Ljava/lang/Comparable;)Lnet/minecraft/block/state/IBlockState;[9117,9129]::withProperty->func_177226_a
+[method, java/lang/Integer/valueOf, (I)Ljava/lang/Integer;]
+Rename method net/minecraft/block/Block/getMetaFromState (Lnet/minecraft/block/state/IBlockState;)I[9260,9276]::getMetaFromState->func_176201_c
+Rename class net/minecraft/block/state/IBlockState[9274,9285]::IBlockState->IBlockState
+Rename method net/minecraft/block/state/IBlockState/getValue (Lnet/minecraft/block/properties/IProperty;)Ljava/lang/Comparable;[9330,9338]::getValue->func_177229_b
+[method, java/lang/Number/intValue, ()I]
+Rename class net/minecraft/block/state/BlockState[9383,9393]::BlockState->BlockState
+Rename method net/minecraft/block/Block/createBlockState ()Lnet/minecraft/block/state/BlockState;[9394,9410]::createBlockState->func_180661_e
+Rename class net/minecraft/block/state/BlockState[9435,9445]::BlockState->BlockState
+Rename class net/minecraft/block/properties/IProperty[9456,9465]::IProperty->IProperty
+Rename class net/minecraft/item/ItemStack[9523,9532]::ItemStack->ItemStack
+[method, net/minecraft/block/Block/getDrops, (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Ljava/util/List;]
+No rename for method net/minecraft/block/Block/getDrops (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Ljava/util/List;
+Rename class net/minecraft/world/IBlockAccess[9543,9575]::net.minecraft.world.IBlockAccess->net.minecraft.world.IBlockAccess
+New Key: class net
+Rename class net/minecraft/util/BlockPos[9583,9591]::BlockPos->BlockPos
+Rename class net/minecraft/block/state/IBlockState[9597,9608]::IBlockState->IBlockState
+Rename class net/minecraft/item/ItemStack[9658,9667]::ItemStack->ItemStack
+[method, net/minecraft/block/Block/getDrops, (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Ljava/util/List;]
+No rename for method net/minecraft/block/Block/getDrops (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Ljava/util/List;
+Rename method net/minecraft/block/state/IBlockState/getValue (Lnet/minecraft/block/properties/IProperty;)Ljava/lang/Comparable;[9753,9761]::getValue->func_177229_b
+[method, java/lang/Number/intValue, ()I]
+Rename class net/minecraft/world/World[9824,9829]::World->World
+Rename class net/minecraft/world/World[9834,9839]::World->World
+Rename field net/minecraft/world/World/rand[9847,9851]::rand->field_73012_v
+[method, java/util/Random/nextInt, (I)I]
+[method, java/util/Collection/add, (Lnet/minecraft/item/ItemStack;)Z]
+Rename class net/minecraft/item/ItemStack[10103,10112]::ItemStack->ItemStack
+[method, zdoctor/zcore/common/EasyCrop/getSeed, ()Lnet/minecraft/item/Item;]
+Import: net.minecraft.block.Block
+Import: net.minecraft.block.BlockBush
+Import: net.minecraft.block.IGrowable
+Import: net.minecraft.block.properties.IProperty
+Import: net.minecraft.block.properties.PropertyInteger
+Import: net.minecraft.block.state.BlockState
+Import: net.minecraft.block.state.IBlockState
+Import: net.minecraft.client.Minecraft
+Import: net.minecraft.client.resources.model.ModelResourceLocation
+Import: net.minecraft.creativetab.CreativeTabs
+Import: net.minecraft.init.Blocks
+Import: net.minecraft.item.Item
+Import: net.minecraft.item.ItemStack
+Import: net.minecraft.util.BlockPos
+Import: net.minecraft.util.MathHelper
+Import: net.minecraft.world.World
+Adding 0 imports
+End  Processing: zdoctor\zcore\common\EasyCrop.java
+
+Start Processing: zdoctor\zcore\common\EasyFood.java
+Warning: zdoctor\zcore\common\EasyFood.java has CRLF line endings; consider switching to LF
+[method, zdoctor/zcore/common/EasyFood/EasyFood, (Ljava/lang/String;Ljava/lang/String;)V]
+FOUND CONSTR method zdoctor/zcore/common/EasyFood/EasyFood (Ljava/lang/String;Ljava/lang/String;)V zdoctor/zcore/common/EasyFood
+Rename class net/minecraft/creativetab/CreativeTabs[1271,1283]::CreativeTabs->CreativeTabs
+Rename field net/minecraft/creativetab/CreativeTabs/tabFood[1284,1291]::tabFood->field_78039_h
+[method, zdoctor/zcore/common/EasyFood/EasyFood, (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;)V]
+FOUND CONSTR method zdoctor/zcore/common/EasyFood/EasyFood (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;)V zdoctor/zcore/common/EasyFood
+Rename class net/minecraft/creativetab/CreativeTabs[1346,1358]::CreativeTabs->CreativeTabs
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[1457,1471]::setCreativeTab->func_77637_a
+Rename method net/minecraft/item/Item/setUnlocalizedName (Ljava/lang/String;)Lnet/minecraft/item/Item;[1483,1501]::setUnlocalizedName->func_77655_b
+[method, zdoctor/zcore/common/EasyFood/getModelPath, ()Ljava/lang/String;]
+[method, zdoctor/zcore/proxy/CommonProxy/subEvent, (Lzdoctor/zcore/common/ISubEvent;)V]
+[method, zdoctor/zcore/common/EasyFood/setStats, (IF)Lzdoctor/zcore/common/EasyFood;]
+[method, zdoctor/zcore/common/EasyFood/setStats, (IFZ)Lzdoctor/zcore/common/EasyFood;]
+[method, zdoctor/zcore/common/EasyFood/setStats, (IFZ)Lzdoctor/zcore/common/EasyFood;]
+[method, zdoctor/zcore/common/EasyFood/getModelPath, ()Ljava/lang/String;]
+[method, zdoctor/zcore/common/EasyFood/getFoodMeta, ()I]
+[method, zdoctor/zcore/common/EasyFood/setRecipe, ([Ljava/lang/Object;)Lzdoctor/zcore/common/EasyFood;]
+[method, zdoctor/zcore/common/EasyFood/setRecipe, ([Ljava/lang/Object;Z)Lzdoctor/zcore/common/EasyFood;]
+[method, zdoctor/zcore/common/EasyFood/setRecipe, ([Ljava/lang/Object;Z)Lzdoctor/zcore/common/EasyFood;]
+[method, zdoctor/zcore/common/EasyFood/setNoTab, ()Lzdoctor/zcore/common/EasyFood;]
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[2659,2673]::setCreativeTab->func_77637_a
+Rename class net/minecraft/creativetab/CreativeTabs[2673,2685]::CreativeTabs->CreativeTabs
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPreInitializationEvent
+[method, java/io/PrintStream/println, (Ljava/lang/String;)V]
+[method, zdoctor/zcore/common/EasyFood/getModelPath, ()Ljava/lang/String;]
+No rename for class net/minecraftforge/fml/common/registry/GameRegistry
+[method, net/minecraftforge/fml/common/registry/GameRegistry/registerItem, (Lnet/minecraft/item/Item;Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/item/Item;]
+No rename for method net/minecraftforge/fml/common/registry/GameRegistry/registerItem (Lnet/minecraft/item/Item;Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/item/Item;
+[method, zdoctor/zcore/common/EasyFood/getModelPath, ()Ljava/lang/String;]
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLInitializationEvent
+[method, net/minecraftforge/fml/common/event/FMLStateEvent/getSide, ()Lnet/minecraftforge/fml/relauncher/Side;]
+No rename for method net/minecraftforge/fml/common/event/FMLStateEvent/getSide ()Lnet/minecraftforge/fml/relauncher/Side;
+No rename for class net/minecraftforge/fml/relauncher/Side
+No rename for field net/minecraftforge/fml/relauncher/Side/CLIENT
+Rename class net/minecraft/client/Minecraft[3013,3022]::Minecraft->Minecraft
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[3023,3035]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/Minecraft/getRenderItem ()Lnet/minecraft/client/renderer/entity/RenderItem;[3038,3051]::getRenderItem->func_175599_af
+Rename method net/minecraft/client/renderer/entity/RenderItem/getItemModelMesher ()Lnet/minecraft/client/renderer/ItemModelMesher;[3055,3073]::getItemModelMesher->func_175037_a
+Rename method net/minecraft/client/renderer/ItemModelMesher/register (Lnet/minecraft/item/Item;ILnet/minecraft/client/resources/model/ModelResourceLocation;)V[3071,3079]::register->func_178086_a
+[method, zdoctor/zcore/common/EasyFood/getFoodMeta, ()I]
+Rename class net/minecraft/client/resources/model/ModelResourceLocation[3120,3141]::ModelResourceLocation->ModelResourceLocation
+[method, zdoctor/zcore/common/EasyFood/getModelPath, ()Ljava/lang/String;]
+No rename for class net/minecraftforge/fml/common/registry/GameRegistry
+[method, net/minecraftforge/fml/common/registry/GameRegistry/addShapelessRecipe, (Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V]
+No rename for method net/minecraftforge/fml/common/registry/GameRegistry/addShapelessRecipe (Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+Rename class net/minecraft/item/ItemStack[3289,3298]::ItemStack->ItemStack
+No rename for class net/minecraftforge/fml/common/registry/GameRegistry
+[method, net/minecraftforge/fml/common/registry/GameRegistry/addRecipe, (Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V]
+No rename for method net/minecraftforge/fml/common/registry/GameRegistry/addRecipe (Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+Rename class net/minecraft/item/ItemStack[3359,3368]::ItemStack->ItemStack
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPostInitializationEvent
+Rename method net/minecraft/item/ItemFood/isWolfsFavoriteMeat ()Z[3488,3507]::isWolfsFavoriteMeat->func_77845_h
+Rename method net/minecraft/item/ItemFood/getHealAmount (Lnet/minecraft/item/ItemStack;)I[3566,3579]::getHealAmount->func_150905_g
+Rename class net/minecraft/item/ItemStack[3580,3589]::ItemStack->ItemStack
+Rename class net/minecraft/item/ItemStack[3647,3656]::ItemStack->ItemStack
+Rename method net/minecraft/item/Item/onItemUseFinish (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack;[3657,3672]::onItemUseFinish->func_77654_b
+Rename class net/minecraft/item/ItemStack[3670,3679]::ItemStack->ItemStack
+Rename class net/minecraft/world/World[3687,3692]::World->World
+Rename class net/minecraft/entity/player/EntityPlayer[3702,3714]::EntityPlayer->EntityPlayer
+Rename method net/minecraft/item/Item/onItemUseFinish (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack;[3742,3757]::onItemUseFinish->func_77654_b
+Rename method net/minecraft/item/ItemFood/onFoodEaten (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V[3812,3823]::onFoodEaten->func_77849_c
+Rename class net/minecraft/item/ItemStack[3825,3834]::ItemStack->ItemStack
+Rename class net/minecraft/world/World[3842,3847]::World->World
+Rename class net/minecraft/entity/player/EntityPlayer[3857,3869]::EntityPlayer->EntityPlayer
+Rename method net/minecraft/item/ItemFood/onFoodEaten (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)V[3888,3899]::onFoodEaten->func_77849_c
+Rename method net/minecraft/item/Item/getMaxItemUseDuration (Lnet/minecraft/item/ItemStack;)I[3992,4013]::getMaxItemUseDuration->func_77626_a
+Rename class net/minecraft/item/ItemStack[4005,4014]::ItemStack->ItemStack
+Rename method net/minecraft/item/Item/getMaxItemUseDuration (Lnet/minecraft/item/ItemStack;)I[4039,4060]::getMaxItemUseDuration->func_77626_a
+Rename class net/minecraft/item/EnumAction[4082,4092]::EnumAction->EnumAction
+Rename method net/minecraft/item/Item/getItemUseAction (Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/EnumAction;[4093,4109]::getItemUseAction->func_77661_b
+Rename class net/minecraft/item/ItemStack[4106,4115]::ItemStack->ItemStack
+Rename method net/minecraft/item/Item/getItemUseAction (Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/EnumAction;[4140,4156]::getItemUseAction->func_77661_b
+Rename class net/minecraft/item/ItemStack[4183,4192]::ItemStack->ItemStack
+Rename method net/minecraft/item/Item/onItemRightClick (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack;[4193,4209]::onItemRightClick->func_77659_a
+Rename class net/minecraft/item/ItemStack[4206,4215]::ItemStack->ItemStack
+Rename class net/minecraft/world/World[4229,4234]::World->World
+Rename class net/minecraft/entity/player/EntityPlayer[4244,4256]::EntityPlayer->EntityPlayer
+Rename method net/minecraft/item/Item/onItemRightClick (Lnet/minecraft/item/ItemStack;Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;)Lnet/minecraft/item/ItemStack;[4284,4300]::onItemRightClick->func_77659_a
+Rename method net/minecraft/item/ItemFood/getSaturationModifier (Lnet/minecraft/item/ItemStack;)F[4358,4379]::getSaturationModifier->func_150906_h
+Rename class net/minecraft/item/ItemStack[4372,4381]::ItemStack->ItemStack
+Rename class net/minecraft/item/ItemFood[4447,4455]::ItemFood->ItemFood
+Rename method net/minecraft/item/ItemFood/setPotionEffect (IIIF)Lnet/minecraft/item/ItemFood;[4456,4471]::setPotionEffect->func_77844_a
+Rename method net/minecraft/item/ItemFood/setPotionEffect (IIIF)Lnet/minecraft/item/ItemFood;[4542,4557]::setPotionEffect->func_77844_a
+Import: net.minecraft.client.Minecraft
+Import: net.minecraft.client.resources.model.ModelResourceLocation
+Import: net.minecraft.creativetab.CreativeTabs
+Import: net.minecraft.entity.player.EntityPlayer
+Import: net.minecraft.item.EnumAction
+Import: net.minecraft.item.ItemFood
+Import: net.minecraft.item.ItemStack
+Import: net.minecraft.world.World
+Adding 0 imports
+End  Processing: zdoctor\zcore\common\EasyFood.java
+
+Start Processing: zdoctor\zcore\common\EasyItem.java
+Warning: zdoctor\zcore\common\EasyItem.java has CRLF line endings; consider switching to LF
+[method, zdoctor/zcore/common/EasyItem/EasyItem, (Ljava/lang/String;Ljava/lang/String;)V]
+FOUND CONSTR method zdoctor/zcore/common/EasyItem/EasyItem (Ljava/lang/String;Ljava/lang/String;)V zdoctor/zcore/common/EasyItem
+Rename class net/minecraft/creativetab/CreativeTabs[901,913]::CreativeTabs->CreativeTabs
+Rename field net/minecraft/creativetab/CreativeTabs/tabMisc[914,921]::tabMisc->field_78026_f
+[method, zdoctor/zcore/common/EasyItem/EasyItem, (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;)V]
+FOUND CONSTR method zdoctor/zcore/common/EasyItem/EasyItem (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;)V zdoctor/zcore/common/EasyItem
+Rename class net/minecraft/creativetab/CreativeTabs[976,988]::CreativeTabs->CreativeTabs
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[1052,1066]::setCreativeTab->func_77637_a
+Rename method net/minecraft/item/Item/setUnlocalizedName (Ljava/lang/String;)Lnet/minecraft/item/Item;[1078,1096]::setUnlocalizedName->func_77655_b
+[method, zdoctor/zcore/common/EasyItem/getModelPath, ()Ljava/lang/String;]
+[method, zdoctor/zcore/proxy/CommonProxy/subEvent, (Lzdoctor/zcore/common/ISubEvent;)V]
+[method, zdoctor/zcore/common/EasyItem/getModelPath, ()Ljava/lang/String;]
+[method, zdoctor/zcore/common/EasyItem/getItemMeta, ()I]
+[method, zdoctor/zcore/common/EasyItem/setRecipe, ([Ljava/lang/Object;)Lzdoctor/zcore/common/EasyItem;]
+[method, zdoctor/zcore/common/EasyItem/setRecipe, ([Ljava/lang/Object;Z)Lzdoctor/zcore/common/EasyItem;]
+[method, zdoctor/zcore/common/EasyItem/setRecipe, ([Ljava/lang/Object;Z)Lzdoctor/zcore/common/EasyItem;]
+[method, zdoctor/zcore/common/EasyItem/setNoTab, ()Lzdoctor/zcore/common/EasyItem;]
+Rename method net/minecraft/item/Item/setCreativeTab (Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;[1826,1840]::setCreativeTab->func_77637_a
+Rename class net/minecraft/creativetab/CreativeTabs[1840,1852]::CreativeTabs->CreativeTabs
+[method, zdoctor/zcore/common/EasyItem/registerRender, ()V]
+[method, java/io/PrintStream/println, (Ljava/lang/String;)V]
+[method, zdoctor/zcore/common/EasyItem/getModelPath, ()Ljava/lang/String;]
+Rename class net/minecraft/client/Minecraft[1979,1988]::Minecraft->Minecraft
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[1989,2001]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/Minecraft/getRenderItem ()Lnet/minecraft/client/renderer/entity/RenderItem;[2004,2017]::getRenderItem->func_175599_af
+Rename method net/minecraft/client/renderer/entity/RenderItem/getItemModelMesher ()Lnet/minecraft/client/renderer/ItemModelMesher;[2021,2039]::getItemModelMesher->func_175037_a
+Rename method net/minecraft/client/renderer/ItemModelMesher/register (Lnet/minecraft/item/Item;ILnet/minecraft/client/resources/model/ModelResourceLocation;)V[2037,2045]::register->func_178086_a
+[method, zdoctor/zcore/common/EasyItem/getItemMeta, ()I]
+Rename class net/minecraft/client/resources/model/ModelResourceLocation[2086,2107]::ModelResourceLocation->ModelResourceLocation
+[method, zdoctor/zcore/common/EasyItem/getModelPath, ()Ljava/lang/String;]
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPreInitializationEvent
+[method, java/io/PrintStream/println, (Ljava/lang/String;)V]
+[method, zdoctor/zcore/common/EasyItem/getModelPath, ()Ljava/lang/String;]
+No rename for class net/minecraftforge/fml/common/registry/GameRegistry
+[method, net/minecraftforge/fml/common/registry/GameRegistry/registerItem, (Lnet/minecraft/item/Item;Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/item/Item;]
+No rename for method net/minecraftforge/fml/common/registry/GameRegistry/registerItem (Lnet/minecraft/item/Item;Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/item/Item;
+[method, zdoctor/zcore/common/EasyItem/getModelPath, ()Ljava/lang/String;]
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLInitializationEvent
+[method, net/minecraftforge/fml/common/event/FMLStateEvent/getSide, ()Lnet/minecraftforge/fml/relauncher/Side;]
+No rename for method net/minecraftforge/fml/common/event/FMLStateEvent/getSide ()Lnet/minecraftforge/fml/relauncher/Side;
+No rename for class net/minecraftforge/fml/relauncher/Side
+No rename for field net/minecraftforge/fml/relauncher/Side/CLIENT
+[method, zdoctor/zcore/common/EasyItem/registerRender, ()V]
+No rename for class net/minecraftforge/fml/common/registry/GameRegistry
+[method, net/minecraftforge/fml/common/registry/GameRegistry/addShapelessRecipe, (Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V]
+No rename for method net/minecraftforge/fml/common/registry/GameRegistry/addShapelessRecipe (Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+Rename class net/minecraft/item/ItemStack[2599,2608]::ItemStack->ItemStack
+No rename for class net/minecraftforge/fml/common/registry/GameRegistry
+[method, net/minecraftforge/fml/common/registry/GameRegistry/addRecipe, (Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V]
+No rename for method net/minecraftforge/fml/common/registry/GameRegistry/addRecipe (Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+Rename class net/minecraft/item/ItemStack[2669,2678]::ItemStack->ItemStack
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPostInitializationEvent
+Import: net.minecraft.client.Minecraft
+Import: net.minecraft.client.resources.model.ModelResourceLocation
+Import: net.minecraft.creativetab.CreativeTabs
+Import: net.minecraft.item.Item
+Import: net.minecraft.item.ItemStack
+Adding 0 imports
+End  Processing: zdoctor\zcore\common\EasyItem.java
+
+Start Processing: zdoctor\zcore\common\EasySeed.java
+Warning: zdoctor\zcore\common\EasySeed.java has CRLF line endings; consider switching to LF
+Rename class net/minecraft/block/Block[593,598]::Block->Block
+Rename class net/minecraft/init/Blocks[607,613]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/wheat[614,619]::wheat->field_150464_aj
+Rename class net/minecraft/block/Block[698,703]::Block->Block
+[method, zdoctor/zcore/common/EasySeed/EasySeed, (Ljava/lang/String;Ljava/lang/String;)V]
+FOUND CONSTR method zdoctor/zcore/common/EasySeed/EasySeed (Ljava/lang/String;Ljava/lang/String;)V zdoctor/zcore/common/EasySeed
+Rename class net/minecraft/creativetab/CreativeTabs[787,799]::CreativeTabs->CreativeTabs
+Rename field net/minecraft/creativetab/CreativeTabs/tabMaterials[800,812]::tabMaterials->field_78035_l
+[method, zdoctor/zcore/common/EasySeed/EasySeed, (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;)V]
+FOUND CONSTR method zdoctor/zcore/common/EasySeed/EasySeed (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/creativetab/CreativeTabs;)V zdoctor/zcore/common/EasySeed
+Rename class net/minecraft/creativetab/CreativeTabs[862,874]::CreativeTabs->CreativeTabs
+[method, zdoctor/zcore/common/EasySeed/setCrop, (Lnet/minecraft/block/Block;)Lzdoctor/zcore/common/EasySeed;]
+Rename class net/minecraft/block/Block[1147,1152]::Block->Block
+[method, zdoctor/zcore/common/EasySeed/setCrop, (Lnet/minecraft/block/Block;Lnet/minecraft/block/Block;)Lzdoctor/zcore/common/EasySeed;]
+[method, zdoctor/zcore/common/EasySeed/setCrop, (Lnet/minecraft/block/Block;Lnet/minecraft/block/Block;)Lzdoctor/zcore/common/EasySeed;]
+Rename class net/minecraft/block/Block[1226,1231]::Block->Block
+Rename class net/minecraft/block/Block[1238,1243]::Block->Block
+Rename class net/minecraft/init/Blocks[1308,1314]::Blocks->Blocks
+Rename field net/minecraft/init/Blocks/farmland[1315,1323]::farmland->field_150458_ak
+[method, zdoctor/zcore/common/EasySeed/getSeed, ()Lzdoctor/zcore/common/EasySeed;]
+[method, zdoctor/zcore/common/EasySeed/setSoil, (Lnet/minecraft/block/Block;)Lzdoctor/zcore/common/EasySeed;]
+Rename class net/minecraft/block/Block[1434,1439]::Block->Block
+Rename method net/minecraft/item/Item/onItemUse (Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;FFF)Z[1511,1520]::onItemUse->func_180614_a
+Rename class net/minecraft/item/ItemStack[1525,1534]::ItemStack->ItemStack
+Rename class net/minecraft/entity/player/EntityPlayer[1542,1554]::EntityPlayer->EntityPlayer
+Rename class net/minecraft/world/World[1565,1570]::World->World
+Rename class net/minecraft/util/BlockPos[1580,1588]::BlockPos->BlockPos
+Rename class net/minecraft/util/EnumFacing[1594,1604]::EnumFacing->EnumFacing
+Rename class net/minecraft/util/EnumFacing[1673,1683]::EnumFacing->EnumFacing
+Rename field net/minecraft/util/EnumFacing/UP[1684,1686]::UP->UP
+Rename method net/minecraft/entity/player/EntityPlayer/canPlayerEdit (Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;Lnet/minecraft/item/ItemStack;)Z[1761,1774]::canPlayerEdit->func_175151_a
+Rename method net/minecraft/util/BlockPos/offset (Lnet/minecraft/util/EnumFacing;)Lnet/minecraft/util/BlockPos;[1779,1785]::offset->func_177972_a
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[1885,1898]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[1904,1912]::getBlock->func_177230_c
+Rename method net/minecraft/world/IBlockAccess/isAirBlock (Lnet/minecraft/util/BlockPos;)Z[1951,1961]::isAirBlock->func_175623_d
+Rename method net/minecraft/util/BlockPos/up ()Lnet/minecraft/util/BlockPos;[1969,1971]::up->func_177984_a
+Rename method net/minecraft/world/World/setBlockState (Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z[2017,2030]::setBlockState->func_175656_a
+Rename method net/minecraft/util/BlockPos/up ()Lnet/minecraft/util/BlockPos;[2035,2037]::up->func_177984_a
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[2063,2078]::getDefaultState->func_176223_P
+Rename field net/minecraft/item/ItemStack/stackSize[2101,2110]::stackSize->field_77994_a
+No rename for class net/minecraftforge/common/EnumPlantType
+[method, net/minecraftforge/common/IPlantable/getPlantType, (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;)Lnet/minecraftforge/common/EnumPlantType;]
+No rename for method net/minecraftforge/common/IPlantable/getPlantType (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;)Lnet/minecraftforge/common/EnumPlantType;
+Rename class net/minecraft/world/IBlockAccess[2263,2275]::IBlockAccess->IBlockAccess
+Rename class net/minecraft/util/BlockPos[2283,2291]::BlockPos->BlockPos
+No rename for class net/minecraftforge/common/EnumPlantType
+No rename for field net/minecraftforge/common/EnumPlantType/Crop
+Rename class net/minecraft/block/state/IBlockState[2351,2362]::IBlockState->IBlockState
+[method, net/minecraftforge/common/IPlantable/getPlant, (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;]
+No rename for method net/minecraftforge/common/IPlantable/getPlant (Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;
+Rename class net/minecraft/world/IBlockAccess[2372,2384]::IBlockAccess->IBlockAccess
+Rename class net/minecraft/util/BlockPos[2392,2400]::BlockPos->BlockPos
+Rename method net/minecraft/block/Block/getDefaultState ()Lnet/minecraft/block/state/IBlockState;[2428,2443]::getDefaultState->func_176223_P
+[method, zdoctor/zcore/common/EasyItem/getModelPath, ()Ljava/lang/String;]
+Import: net.minecraft.block.Block
+Import: net.minecraft.block.state.IBlockState
+Import: net.minecraft.creativetab.CreativeTabs
+Import: net.minecraft.entity.player.EntityPlayer
+Import: net.minecraft.init.Blocks
+Import: net.minecraft.item.ItemStack
+Import: net.minecraft.util.BlockPos
+Import: net.minecraft.util.EnumFacing
+Import: net.minecraft.world.IBlockAccess
+Import: net.minecraft.world.World
+Adding 0 imports
+End  Processing: zdoctor\zcore\common\EasySeed.java
+
+Start Processing: zdoctor\zcore\common\HelperFunctions.java
+Warning: zdoctor\zcore\common\HelperFunctions.java has CRLF line endings; consider switching to LF
+[method, zdoctor/zcore/common/HelperFunctions/checkSurrondingsFor, (Lnet/minecraft/block/Block;Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Z]
+Rename class net/minecraft/block/Block[210,215]::Block->Block
+Rename class net/minecraft/world/World[223,228]::World->World
+Rename class net/minecraft/util/BlockPos[238,246]::BlockPos->BlockPos
+[method, zdoctor/zcore/common/HelperFunctions/getBlock, (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/Block;]
+Rename method net/minecraft/util/BlockPos/north ()Lnet/minecraft/util/BlockPos;[290,295]::north->func_177978_c
+[method, zdoctor/zcore/common/HelperFunctions/getBlock, (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/Block;]
+Rename method net/minecraft/util/BlockPos/east ()Lnet/minecraft/util/BlockPos;[341,345]::east->func_177974_f
+[method, zdoctor/zcore/common/HelperFunctions/getBlock, (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/Block;]
+Rename method net/minecraft/util/BlockPos/south ()Lnet/minecraft/util/BlockPos;[392,397]::south->func_177968_d
+[method, zdoctor/zcore/common/HelperFunctions/getBlock, (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/Block;]
+Rename method net/minecraft/util/BlockPos/west ()Lnet/minecraft/util/BlockPos;[447,451]::west->func_177976_e
+[method, zdoctor/zcore/common/HelperFunctions/getBlock, (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/Block;]
+Rename method net/minecraft/util/BlockPos/north ()Lnet/minecraft/util/BlockPos;[522,527]::north->func_177978_c
+Rename method net/minecraft/util/BlockPos/east ()Lnet/minecraft/util/BlockPos;[538,542]::east->func_177974_f
+[method, zdoctor/zcore/common/HelperFunctions/getBlock, (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/Block;]
+Rename method net/minecraft/util/BlockPos/north ()Lnet/minecraft/util/BlockPos;[589,594]::north->func_177978_c
+Rename method net/minecraft/util/BlockPos/west ()Lnet/minecraft/util/BlockPos;[605,609]::west->func_177976_e
+[method, zdoctor/zcore/common/HelperFunctions/getBlock, (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/Block;]
+Rename method net/minecraft/util/BlockPos/south ()Lnet/minecraft/util/BlockPos;[659,664]::south->func_177968_d
+[method, zdoctor/zcore/common/HelperFunctions/getBlock, (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/Block;]
+Rename method net/minecraft/util/BlockPos/south ()Lnet/minecraft/util/BlockPos;[710,715]::south->func_177968_d
+Rename method net/minecraft/util/BlockPos/east ()Lnet/minecraft/util/BlockPos;[726,730]::east->func_177974_f
+[method, zdoctor/zcore/common/HelperFunctions/getBlock, (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/Block;]
+Rename method net/minecraft/util/BlockPos/south ()Lnet/minecraft/util/BlockPos;[781,786]::south->func_177968_d
+Rename method net/minecraft/util/BlockPos/west ()Lnet/minecraft/util/BlockPos;[797,801]::west->func_177976_e
+Rename class net/minecraft/block/Block[875,880]::Block->Block
+[method, zdoctor/zcore/common/HelperFunctions/getBlock, (Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/Block;]
+Rename class net/minecraft/world/World[890,895]::World->World
+Rename class net/minecraft/util/BlockPos[905,913]::BlockPos->BlockPos
+Rename method net/minecraft/world/IBlockAccess/getBlockState (Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState;[938,951]::getBlockState->func_180495_p
+Rename method net/minecraft/block/state/IBlockState/getBlock ()Lnet/minecraft/block/Block;[957,965]::getBlock->func_177230_c
+Import: net.minecraft.block.Block
+Import: net.minecraft.util.BlockPos
+Import: net.minecraft.world.World
+Adding 0 imports
+End  Processing: zdoctor\zcore\common\HelperFunctions.java
+
+Start Processing: zdoctor\zcore\common\ISubEvent.java
+Warning: zdoctor\zcore\common\ISubEvent.java has CRLF line endings; consider switching to LF
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPreInitializationEvent
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLInitializationEvent
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPostInitializationEvent
+Adding 0 imports
+End  Processing: zdoctor\zcore\common\ISubEvent.java
+
+Start Processing: zdoctor\zcore\proxy\ClientProxy.java
+Warning: zdoctor\zcore\proxy\ClientProxy.java has CRLF line endings; consider switching to LF
+[method, zdoctor/zcore/proxy/CommonProxy/preInit, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPreInitializationEvent
+[method, zdoctor/zcore/proxy/CommonProxy/preInit, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+[method, zdoctor/zcore/proxy/CommonProxy/init, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLInitializationEvent
+[method, zdoctor/zcore/proxy/CommonProxy/init, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+[method, zdoctor/zcore/proxy/CommonProxy/postInit, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPostInitializationEvent
+[method, zdoctor/zcore/proxy/CommonProxy/postInit, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
+Adding 0 imports
+End  Processing: zdoctor\zcore\proxy\ClientProxy.java
+
+Start Processing: zdoctor\zcore\proxy\CommonProxy.java
+Warning: zdoctor\zcore\proxy\CommonProxy.java has CRLF line endings; consider switching to LF
+[method, zdoctor/zcore/proxy/CommonProxy/preInit, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPreInitializationEvent
+[method, zdoctor/zcore/proxy/CommonProxy/alertAll, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+[method, zdoctor/zcore/proxy/CommonProxy/init, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLInitializationEvent
+[method, zdoctor/zcore/proxy/CommonProxy/alertAll, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+[method, zdoctor/zcore/proxy/CommonProxy/postInit, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPostInitializationEvent
+[method, zdoctor/zcore/proxy/CommonProxy/alertAll, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
+[method, java/util/Collection/clear, ()V]
+[method, zdoctor/zcore/proxy/CommonProxy/subEvent, (Lzdoctor/zcore/common/ISubEvent;)V]
+[method, java/util/Collection/add, (Lzdoctor/zcore/common/ISubEvent;)Z]
+[method, zdoctor/zcore/proxy/CommonProxy/alertAll, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPreInitializationEvent
+[method, java/lang/Iterable/iterator, ()Ljava/util/Iterator;]
+[method, java/util/Iterator/hasNext, ()Z]
+[method, java/util/Iterator/next, ()Lzdoctor/zcore/common/ISubEvent;]
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+[method, zdoctor/zcore/proxy/CommonProxy/alertAll, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLInitializationEvent
+[method, java/lang/Iterable/iterator, ()Ljava/util/Iterator;]
+[method, java/util/Iterator/hasNext, ()Z]
+[method, java/util/Iterator/next, ()Lzdoctor/zcore/common/ISubEvent;]
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+[method, zdoctor/zcore/proxy/CommonProxy/alertAll, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPostInitializationEvent
+[method, java/lang/Iterable/iterator, ()Ljava/util/Iterator;]
+[method, java/util/Iterator/hasNext, ()Z]
+[method, java/util/Iterator/next, ()Lzdoctor/zcore/common/ISubEvent;]
+[method, zdoctor/zcore/common/ISubEvent/fire, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
+Adding 0 imports
+End  Processing: zdoctor\zcore\proxy\CommonProxy.java
+
+Start Processing: zdoctor\zcore\proxy\ServerProxy.java
+Warning: zdoctor\zcore\proxy\ServerProxy.java has CRLF line endings; consider switching to LF
+[method, zdoctor/zcore/proxy/CommonProxy/preInit, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPreInitializationEvent
+[method, zdoctor/zcore/proxy/CommonProxy/preInit, (Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V]
+[method, zdoctor/zcore/proxy/CommonProxy/init, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLInitializationEvent
+[method, zdoctor/zcore/proxy/CommonProxy/init, (Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V]
+[method, zdoctor/zcore/proxy/CommonProxy/postInit, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
+No rename for class net/minecraftforge/fml/common/event/FMLPostInitializationEvent
+[method, zdoctor/zcore/proxy/CommonProxy/postInit, (Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V]
+Adding 0 imports
+End  Processing: zdoctor\zcore\proxy\ServerProxy.java
 

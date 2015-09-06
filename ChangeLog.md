@@ -1,3 +1,9 @@
+1.0
+    - Fixed everything
+    - All crops have textures
+    - Updated most old textures
+    - Diamonds now grow on coal blocks, needs lava to be around the block (corners work).
+
 0.2
     - Fixed bugs and cleaned code
     - Added new plants and seeds

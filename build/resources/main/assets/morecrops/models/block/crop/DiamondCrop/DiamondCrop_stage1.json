@@ -1,0 +1,6 @@
+{
+    "parent": "morecrops:block/WheatCrop",
+    "textures": {
+        "crop": "morecrops:crops/DiamondCrop/DiamondCrop_stage_1"
+    }
+}

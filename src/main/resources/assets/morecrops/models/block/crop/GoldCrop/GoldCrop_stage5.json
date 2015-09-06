@@ -1,0 +1,6 @@
+{
+    "parent": "morecrops:block/CrossCrop",
+    "textures": {
+        "crop": "morecrops:crops/GoldCrop/GoldCrop_stage_5"
+    }
+}
