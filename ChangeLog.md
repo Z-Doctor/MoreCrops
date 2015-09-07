@@ -1,3 +1,9 @@
+1.2
+    - Updated McModInfo
+    - Added Config and Config Menu
+    - Diamonds need to grow on a coal block with lava adjacent to them that is open to air.
+    - Config option added for Material Plants to use Bone Meal (defaults to false)
+
 1.1
     - Updated Emerald and Diamond Plant textures
     - Restructured Code

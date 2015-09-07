@@ -10,12 +10,14 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import zdoctor.morecrops.crops.Crops;
 import zdoctor.zcore.proxy.CommonProxy;
 
-@Mod(modid = MoreCrops.modid, version = MoreCrops.verid, name = MoreCrops.name, dependencies = MoreCrops.depends)
+@Mod(modid = MoreCrops.modid, version = MoreCrops.verid, name = MoreCrops.name, 
+	dependencies = MoreCrops.depends,  guiFactory = MoreCrops.config)
 public class MoreCrops {
 	public static final  String modid = "morecrops";
-	public static final String verid = "1.1";
+	public static final String verid = "1.2";
 	public static final String name = "More Crops";
 	public static final String depends = "";
+	public static final String config = "zdoctor." + modid +".GuiFactoryMoreCrops";
 		
 	@SidedProxy(clientSide="zdoctor.zcore.proxy.ClientProxy", serverSide="zdoctor.zcore.proxy.ServerProxy")
 	public static CommonProxy proxy;

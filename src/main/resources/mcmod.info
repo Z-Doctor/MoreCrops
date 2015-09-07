@@ -2,14 +2,14 @@
 {
   "modid":"morecrops",
   "name": "More Crops",
-  "description": "All the crops you would have never needed or wanted. This mod shows the potential of ZCore (not required). This mod adds a number of plants to the game. More to come.",
-  "version": "1.0",
+  "description": "Adds useful plants to the game to grow materials.",
+  "version": "1.2",
   "mcversion": "1.8",
-  "url": "",
+  "url": "http://adf.ly/1Nn2gv",
   "updateUrl": "",
-  "authorList": ["ZDoctor"],
+  "authorList": ["Z_Doctor"],
   "credits": "",
-  "logoFile": "",
+  "logoFile": "/Banner.png",
   "screenshots": [],
   "dependencies": []
 }

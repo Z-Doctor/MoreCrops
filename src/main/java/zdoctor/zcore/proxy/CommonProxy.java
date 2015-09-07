@@ -7,12 +7,14 @@ import java.util.List;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import zdoctor.morecrops.GuiFactoryMoreCrops;
 import zdoctor.zcore.common.ISubEvent;
 
 public class CommonProxy {
 	protected static List<ISubEvent> subs = new ArrayList<ISubEvent>();
 	
 	public void preInit(FMLPreInitializationEvent e) {
+		GuiFactoryMoreCrops.load(e);
 		alertAll(e);
 	}
 	
