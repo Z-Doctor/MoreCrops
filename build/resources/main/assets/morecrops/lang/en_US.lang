@@ -1,9 +1,0 @@
-tile.crop/DiamondCrop.name=Diamond Crop
-tile.crop/IronCrop.name=Iron Crop
-tile.crop/GoldCrop.name=Gold Crop
-tile.crop/EmeraldCrop.name=Emerald Crop
-
-item.seed/DiamondSeed.name=Diamond Seed
-item.seed/IronSeed.name=Iron Seed
-item.seed/GoldSeed.name=Gold Seed
-item.seed/EmeraldSeed.name=Emerald Seed

@@ -4,6 +4,6 @@ tile.crop/GoldCrop.name=Gold Crop
 tile.crop/EmeraldCrop.name=Emerald Crop
 
 item.seed/DiamondSeed.name=Seed o' Wealth
-item.seed/IronSeed.name=Iron Seed
-item.seed/GoldSeed.name=Gold Seed
-item.seed/EmeraldSeed.name=Emerald Seed
+item.seed/IronSeed.name=Iron Bullion Grower
+item.seed/GoldSeed.name=Gold Bullion Grower
+item.seed/EmeraldSeed.name=Sea Sick Sailor's Vomit Seed

@@ -1,6 +1,0 @@
-{
-    "parent": "morecrops:block/CrossCrop",
-    "textures": {
-        "crop": "morecrops:crops/IronCrop/IronCrop_stage_1"
-    }
-}

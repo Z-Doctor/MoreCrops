@@ -1,5 +1,5 @@
 {
-    "parent": "morecrops:block/WheatCrop",
+    "parent": "morecrops:block/CrossCrop",
     "textures": {
         "crop": "morecrops:crops/EmeraldCrop/EmeraldCrop_stage_4"
     }

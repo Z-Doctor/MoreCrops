@@ -1,3 +1,12 @@
+1.1
+    - Updated Emerald and Diamond Plant textures
+    - Restructured Code
+        - More readable and organized
+    - Added Item Registry, ZItems
+    - Updated Language files
+        - Updated Pirate Speak
+        - Added Español (Mexico and Spain), hopefully accurate
+
 1.0
     - Fixed everything
     - All crops have textures
