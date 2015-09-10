@@ -48,7 +48,12 @@ public class EasyFood extends ItemFood implements ISubEvent {
 		CommonProxy.subEvent(this);	
 	}
 	
-	// Food Stats
+	/**
+	 * 
+	 * @param amount - Amount of hearts(mutton) filled (2 = 1 mutton) (Bread = 5; apple = 4; cooked pork chop = 8, etc)
+	 * @param saturation - How long it takes to get hungry again (Bread = 6.0F; apple = 2.4F; cooked pork chop = 12.8F, etc)
+	 * @return
+	 */
 	public EasyFood setStats(int amount, float saturation){
 		return this.setStats(amount, saturation, false);
 	}

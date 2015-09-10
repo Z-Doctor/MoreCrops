@@ -7,3 +7,7 @@ item.seed/DiamondSeed.name=Seed o' Wealth
 item.seed/IronSeed.name=Iron Bullion Grower
 item.seed/GoldSeed.name=Gold Bullion Grower
 item.seed/EmeraldSeed.name=Sea Sick Sailor's Vomit Seed
+
+tile.crop/StrawberryCrop.name=Sickly Baby Apple Plant
+item.seed/StrawberrySeed.name=Sickly Apple Seed
+item.food/Strawberry.name=A Sickly Baby Apple

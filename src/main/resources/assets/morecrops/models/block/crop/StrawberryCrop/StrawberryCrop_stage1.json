@@ -1,0 +1,6 @@
+{
+    "parent": "morecrops:block/CrossCrop",
+    "textures": {
+        "crop": "morecrops:crops/StrawberryCrop/StrawberryCrop_stage_1"
+    }
+}

@@ -2,8 +2,8 @@
 {
   "modid":"morecrops",
   "name": "More Crops",
-  "description": "Adds useful plants to the game to grow materials.",
-  "version": "1.2",
+  "description": "Adds useful plants to the game to grow materials and a number of new crops and recipes.",
+  "version": "1.3",
   "mcversion": "1.8",
   "url": "http://adf.ly/1Nn2gv",
   "updateUrl": "",

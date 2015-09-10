@@ -7,4 +7,7 @@ public class ZItems {
 	public static Item EmeraldSeed;
 	public static Item GoldSeed;
 	public static Item IronSeed;
+	
+	public static Item Strawberry;
+	public static Item StrawberrySeed;
 }

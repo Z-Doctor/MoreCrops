@@ -62,6 +62,11 @@ public class EasyCrop extends BlockBush implements IGrowable, ISubEvent {
  	public EasyCrop setCrop(Item crop) {
  		return this.setCrop(crop, (Item)null);
  	}
+ 	/**
+ 	 * Set what it drops and its seed
+ 	 * @param crop - What is droped
+ 	 * @param seed - The seed to drop
+ 	 */
  	public EasyCrop setCrop(Item crop, Item seed) {
  		this.crop = crop;
  		this.cropSeed = seed;
@@ -110,7 +115,13 @@ public class EasyCrop extends BlockBush implements IGrowable, ISubEvent {
 	}
 	@Override
 	public void fire(FMLPostInitializationEvent e) {
-		((EasySeed) this.cropSeed).setCrop(this, this.farmLand);
+		if(this.cropSeed != null) {
+			if(this.cropSeed instanceof EasySeed)
+				((EasySeed) this.cropSeed).setCrop(this, this.farmLand);
+			else
+				System.out.println("Something went wrong! Skipping " + this.getUnlocalizedName());
+		} else
+			System.out.println(this.getUnlocalizedName() + " is null! Skipping...");
 	}
 	
 	@Override
@@ -259,7 +270,7 @@ public class EasyCrop extends BlockBush implements IGrowable, ISubEvent {
         return ((Integer)state.getValue(AGE)).intValue() < 7;
     }
 
-    public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, IBlockState state)
+    public boolean canUseBonemeal()
     {
         return true;
     }
@@ -317,4 +328,9 @@ public class EasyCrop extends BlockBush implements IGrowable, ISubEvent {
         }
         return ret;
     }
+	@Override
+	public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, IBlockState state) {
+		// TODO Auto-generated method stub
+		return true;
+	}
 }

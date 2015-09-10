@@ -7,3 +7,7 @@ item.seed/DiamondSeed.name=Semillas de Diamante
 item.seed/IronSeed.name=Semillas de Hierro
 item.seed/GoldSeed.name=Semillas de Oro
 item.seed/EmeraldSeed.name=Semillas de Esmeralda
+
+tile.crop/StrawberryCrop.name=Fresa Plant
+item.seed/StrawberrySeed.name=Semillas de Fresa
+item.food/Strawberry.name=Fresa

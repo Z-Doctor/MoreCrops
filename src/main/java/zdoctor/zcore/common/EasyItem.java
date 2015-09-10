@@ -70,6 +70,10 @@ public class EasyItem extends Item implements ISubEvent {
 				new ModelResourceLocation(this.modID + ":" + this.getModelPath(), "inventory"));
 	}
 	
+	public boolean registerRecipe() {
+		return true;
+	}
+	
 	// Overrides
 	@Override
 	public void fire(FMLPreInitializationEvent e) {
@@ -81,7 +85,7 @@ public class EasyItem extends Item implements ISubEvent {
 	public void fire(FMLInitializationEvent e) {
 		if(e.getSide() == Side.CLIENT)
 			registerRender();
-		if(this.recipe != null) {
+		if(this.recipe != null && this.registerRecipe()) {
 			if(this.isShapeless)
 				GameRegistry.addShapelessRecipe(new ItemStack(this), this.recipe);
 			else

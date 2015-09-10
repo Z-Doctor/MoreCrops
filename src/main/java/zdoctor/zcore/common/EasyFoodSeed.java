@@ -13,51 +13,36 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
 
-public class EasySeed extends EasyItem implements IPlantable {
+public class EasyFoodSeed extends EasyFood implements IPlantable {
 	private Block crops = Blocks.wheat;
 	/** BlockID of the block the seeds can be planted on. */
-	private Block soilBlockID = Blocks.farmland;
+	private Block soilBlockID;
 	    
-	public EasySeed(String model, String mod) {
+	public EasyFoodSeed(String model, String mod) {
 		this(model, mod, CreativeTabs.tabMaterials);
 	}
-	public EasySeed(String model, String mod, CreativeTabs tab) {
-		super(model, mod, tab);
+	public EasyFoodSeed(String model, String mod, CreativeTabs tab) {
+		super("seed/" + model, mod, tab);
 	}
-	/**
-	 * To be used by easy crop
-	 */
-	protected EasySeed setCrop(Block crop){
+	
+	protected EasyFoodSeed setCrop(Block crop){
 		return this.setCrop(crop, null);
 	}
-	protected EasySeed setCrop(Block crop, Block soil){
+	protected EasyFoodSeed setCrop(Block crop, Block soil){
 		this.crops = crop;
 		this.soilBlockID = soil == null ? Blocks.farmland : soil;
 		return this;
 	}
 	
-	public EasySeed getSeed() {
+	public EasyFoodSeed getSeed() {
 		return this;
 	}
 	
-	private EasySeed setSoil(Block soil) {
+	private EasyFoodSeed setSoil(Block soil) {
 		this.soilBlockID = soil;
 		return this;
 	}
 	
-	@Override
-	public EasySeed setRecipe(Object[] recipe) {
-		super.setRecipe(recipe);
-		return this;
-	}
-	
-	@Override
-	public EasySeed setRecipe(Object[] recipe, boolean isShapeless) {
-		super.setRecipe(recipe, isShapeless);
-		return this;
-	}
-	
-	@Override
 	public boolean onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos, EnumFacing side, float hitX, float hitY, float hitZ)
     {
         if (side != EnumFacing.UP)
@@ -89,9 +74,4 @@ public class EasySeed extends EasyItem implements IPlantable {
 	public IBlockState getPlant(IBlockAccess world, BlockPos pos) {
 		return this.crops.getDefaultState();
 	}
-	@Override
-	public String getModelPath() {
-		return "seed/" + this.itemModel;
-	}
-
 }

@@ -1,24 +1,30 @@
-package zdoctor.morecrops;
+package zdoctor.morecrops.config;
 
 import java.util.Set;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.IModGuiFactory;
+import net.minecraftforge.fml.client.event.ConfigChangedEvent;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import zdoctor.morecrops.events.ConfigSaver;
+import zdoctor.morecrops.events.ForgeEvents;
 
-public class GuiFactoryMoreCrops implements IModGuiFactory {
-	public static Configuration config;
+public class GuiFactory implements IModGuiFactory {
+	public static Configuration cfig;
 	public static void load(FMLPreInitializationEvent e) {
-		config = new Configuration(e.getSuggestedConfigurationFile());
-		config.load();
-		
-		boolean allowBoneMeal = config.get(Configuration.CATEGORY_GENERAL, "Allow Bone Meal Use", 
-				false).getBoolean(false);
-		
-		config.save();
+		cfig = new Configuration(e.getSuggestedConfigurationFile());
+		cfig.load();
+		cfig = Config.load(cfig);
+		cfig.save();
+		FMLCommonHandler.instance().bus().register(new ConfigSaver());
+		MinecraftForge.EVENT_BUS.register(new ForgeEvents());
 	}
+	
 	@Override
 	public void initialize(Minecraft minecraftInstance) {
 		// TODO Auto-generated method stub
@@ -26,7 +32,7 @@ public class GuiFactoryMoreCrops implements IModGuiFactory {
 	}
 	@Override
 	public Class<? extends GuiScreen> mainConfigGuiClass() {
-		return GuiConfigMoreCrops.class;
+		return ConfigMenu.class;
 	}
 	@Override
 	public Set<RuntimeOptionCategoryElement> runtimeGuiCategories() {

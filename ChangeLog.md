@@ -1,3 +1,14 @@
+1.3
+    - Added Strawberry Crop, Seed and Food Item (More on the way)
+        - Has textures (Beautiful)
+        - Strawberry seed made with strawberry (shapeless)
+        - Strawberry found in grass (More rare than wheat seeds)
+    - Config now properly saves when changed (sorry about that)
+    - Reworked Code (major rework may come soon)
+    - Works with Forge (1513)
+    - Bone Meal is not consumed when used on plants and Bone Meal isn't allowed.
+    - Updated language files
+
 1.2
     - Updated McModInfo
     - Added Config and Config Menu

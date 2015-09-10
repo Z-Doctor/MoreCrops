@@ -1,4 +1,4 @@
-package zdoctor.morecrops;
+package zdoctor.morecrops.config;
 
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
@@ -6,19 +6,39 @@ import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.config.GuiConfig;
 
-public class GuiConfigMoreCrops extends GuiConfig {
+public class ConfigMenu extends GuiConfig {
+	private static String modID = "";
+	private static String title = "";
+	private static String subTitle = "";
+	
+	public static void setModId(String mod) {
+		modID = mod;
+	}
+	public static void setTitle(String t) {
+		title = t;
+	}
+	public static void setSubTitle(String subT) {
+		subTitle = subT;
+	}
+	
+	public static void set(String mod, String t, String subT) {
+		modID = mod;
+		title = t;
+		subTitle = subT;
+	}
+	
+	public static String getModID() {
+		return modID;
+	}
 
-	public GuiConfigMoreCrops(GuiScreen parent) 
+	public ConfigMenu(GuiScreen parent) 
     {
-        super(parent,
-                new ConfigElement(
-                      GuiFactoryMoreCrops.config.getCategory(Configuration.CATEGORY_GENERAL))
-                            .getChildElements(),
-                MoreCrops.modid, 
-                false, 
-                false, 
-                "MoreCrops Configurations");
-        titleLine2 = "A config menu just for you.";
+        super(parent, new ConfigElement(
+        		GuiFactory.cfig.getCategory(Configuration.CATEGORY_GENERAL))
+        			.getChildElements(), 
+        modID, false, false, title); titleLine2 = subTitle;
+        
+        //MoreMenu.createMenu(parent);
     }
     
     @Override

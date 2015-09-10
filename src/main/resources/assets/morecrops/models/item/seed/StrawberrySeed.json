@@ -1,0 +1,6 @@
+{
+    "parent":"morecrops:item/standard_item",
+    "textures": {
+        "layer0":"morecrops:seeds/StrawberrySeed"
+    }
+}
