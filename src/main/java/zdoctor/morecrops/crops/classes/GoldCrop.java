@@ -7,11 +7,11 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
+import zcore.common.EasyCrop;
+import zcore.common.EasySeed;
+import zcore.config.Config;
+import zcore.gameregistry.ZItems;
 import zdoctor.morecrops.MoreCrops;
-import zdoctor.morecrops.config.Config;
-import zdoctor.morecrops.gameregistry.ZItems;
-import zdoctor.zcore.common.EasyCrop;
-import zdoctor.zcore.common.EasySeed;
 
 public class GoldCrop {
 	public static void load() {

@@ -4,15 +4,11 @@ import java.util.Set;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.IModGuiFactory;
-import net.minecraftforge.fml.client.event.ConfigChangedEvent;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import zdoctor.morecrops.events.ConfigSaver;
-import zdoctor.morecrops.events.ForgeEvents;
+import zdoctor.zcore.common.EasyStuff.EventRegistry;
 
 public class GuiFactory implements IModGuiFactory {
 	public static Configuration cfig;
@@ -21,8 +17,7 @@ public class GuiFactory implements IModGuiFactory {
 		cfig.load();
 		cfig = Config.load(cfig);
 		cfig.save();
-		FMLCommonHandler.instance().bus().register(new ConfigSaver());
-		MinecraftForge.EVENT_BUS.register(new ForgeEvents());
+		EventRegistry.registerToFMLBus(ConfigSaver.class);
 	}
 	
 	@Override

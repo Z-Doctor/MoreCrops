@@ -10,12 +10,12 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import zcore.common.EasyCrop;
+import zcore.common.EasyFood;
+import zcore.common.EasySeed;
+import zcore.common.EasyStuff.GameAdditions;
+import zcore.gameregistry.ZItems;
 import zdoctor.morecrops.MoreCrops;
-import zdoctor.morecrops.gameregistry.ZItems;
-import zdoctor.zcore.common.EasyCrop;
-import zdoctor.zcore.common.EasyFood;
-import zdoctor.zcore.common.EasySeed;
-import zdoctor.zcore.common.EasyStuff;
 
 public class StrawberryCrop {
 	public static void load() {
@@ -54,6 +54,6 @@ public class StrawberryCrop {
 		
 		StrawberryCrop.setCrop(ZItems.Strawberry, ZItems.StrawberrySeed);
 		
-		EasyStuff.addGrassDrop(new ItemStack(ZItems.Strawberry, 1), 4);
+		GameAdditions.addGrassDrop(new ItemStack(ZItems.Strawberry, 1), 4);
 	}
 }

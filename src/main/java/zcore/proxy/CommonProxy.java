@@ -1,4 +1,4 @@
-package zdoctor.zcore.proxy;
+package zcore.proxy;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -7,15 +7,17 @@ import java.util.List;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import zdoctor.morecrops.config.Config;
-import zdoctor.morecrops.config.GuiFactory;
-import zdoctor.zcore.common.ISubEvent;
+import zcore.common.ISubEvent;
+import zcore.config.ConfigGuiFactory;
+import zcore.events.CoreEvents;
+import zcore.events.CoreEvents.ErrorRegistry;
 
 public class CommonProxy {
 	protected static List<ISubEvent> subs = new ArrayList<ISubEvent>();
 	
 	public void preInit(FMLPreInitializationEvent e) {
-		GuiFactory.load(e);
+		ConfigGuiFactory.load(e);
+		CoreEvents.load();
 		alertAll(e);
 	}
 	
@@ -26,6 +28,7 @@ public class CommonProxy {
 	public void postInit(FMLPostInitializationEvent e) {
 		alertAll(e);
 		subs.clear();
+		ErrorRegistry.errorReport();
 	}
 	
 	public static void subEvent(ISubEvent object) {
