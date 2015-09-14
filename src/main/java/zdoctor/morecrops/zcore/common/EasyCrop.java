@@ -1,4 +1,4 @@
-package zcore.common;
+package zdoctor.morecrops.zcore.common;
 
 import java.util.Random;
 
@@ -24,20 +24,18 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import zcore.proxy.CommonProxy;
-
+import zdoctor.morecrops.zcore.proxy.CommonProxy;
+// added funation
 public class EasyCrop extends BlockBush implements IGrowable, ISubEvent {
     public static final PropertyInteger AGE = PropertyInteger.create("age", 0, 7);
     
     protected Item cropSeed;
     protected Item crop;
+    protected Block farmLand;
     
-    private Block farmLand = Blocks.farmland;
-    
-    // Basic info
  	protected final String cropModel;
  	protected final String modID;
- 	// Constructors
+
  	public EasyCrop(String model, String mod) {
  		this(model, mod, (CreativeTabs)null);
  	}
@@ -56,12 +54,19 @@ public class EasyCrop extends BlockBush implements IGrowable, ISubEvent {
  		
  		this.setUnlocalizedName(this.getModelPath());
  		
+ 		this.farmLand = Blocks.farmland;
+ 		
  		CommonProxy.subEvent(this);
  	}
  	
  	public EasyCrop setCrop(Item crop) {
  		return this.setCrop(crop, (Item)null);
  	}
+	
+ 	public boolean willItGrow(World worldIn, BlockPos pos, IBlockState state) {
+ 		return true;
+ 	}
+ 	
  	/**
  	 * Set what it drops and its seed
  	 * @param crop - What is droped
@@ -73,9 +78,12 @@ public class EasyCrop extends BlockBush implements IGrowable, ISubEvent {
  		return this;
  	}
  	
- 	public EasyCrop growsOn(Block ground) {
+ 	public EasyCrop setFarmland(Block ground) {
  		this.farmLand = ground;
  		return this;
+ 	}
+	public Block getFarmland() {
+ 		return this.farmLand;
  	}
  	
  	/** Override to set a different path */
@@ -224,11 +232,11 @@ public class EasyCrop extends BlockBush implements IGrowable, ISubEvent {
 
         return f;
     }
-
+    
+    // You may want to override this for your class
     public boolean canBlockStay(World worldIn, BlockPos pos, IBlockState state)
     {
-        return (worldIn.getLight(pos) >= 8 || worldIn.canSeeSky(pos)) && worldIn.getBlockState(pos.down()).getBlock().canSustainPlant(worldIn, pos.down(), net.minecraft.util.EnumFacing.UP, this)
-			&& canPlaceBlockAt(worldIn, pos.down());
+        return super.canBlockStay(worldIn, pos, state);
     }
 
     protected Item getSeed()
@@ -268,11 +276,6 @@ public class EasyCrop extends BlockBush implements IGrowable, ISubEvent {
     public boolean canGrow(World worldIn, BlockPos pos, IBlockState state, boolean isClient)
     {
         return ((Integer)state.getValue(AGE)).intValue() < 7;
-    }
-
-    public boolean canUseBonemeal()
-    {
-        return true;
     }
 
     @SideOnly(Side.CLIENT)

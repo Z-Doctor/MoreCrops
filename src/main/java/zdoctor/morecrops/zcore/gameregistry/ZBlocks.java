@@ -1,4 +1,4 @@
-package zcore.gameregistry;
+package zdoctor.morecrops.zcore.gameregistry;
 /**
  * A class to hold all your Blocks. Be sure to properly assign them.
  * @author Z_Doctor

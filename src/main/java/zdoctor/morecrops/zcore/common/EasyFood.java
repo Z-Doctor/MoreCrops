@@ -1,4 +1,4 @@
-package zcore.common;
+package zdoctor.morecrops.zcore.common;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
-import zcore.proxy.CommonProxy;
+import zdoctor.morecrops.zcore.proxy.CommonProxy;
 
 /**
  * A class to automate the process of putting it into the game and getting its texture

@@ -1,4 +1,4 @@
-package zcore.common;
+package zdoctor.morecrops.zcore.common;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
@@ -12,41 +12,55 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
-
 /**
  * A class to automate the process of putting it into the game and getting its texture
  * @author Z_Doctor
  */
-public class EasyFoodSeed extends EasyFood implements IPlantable {
+public class EasySeed extends EasyItem implements IPlantable {
 	private Block crops = Blocks.wheat;
 	/** BlockID of the block the seeds can be planted on. */
-	private Block soilBlockID;
+	private Block soilBlockID = Blocks.farmland;
 	    
-	public EasyFoodSeed(String model, String mod) {
+	public EasySeed(String model, String mod) {
 		this(model, mod, CreativeTabs.tabMaterials);
 	}
-	public EasyFoodSeed(String model, String mod, CreativeTabs tab) {
-		super("seed/" + model, mod, tab);
+	public EasySeed(String model, String mod, CreativeTabs tab) {
+		super(model, mod, tab);
 	}
-	
-	protected EasyFoodSeed setCrop(Block crop){
+	/**
+	 * To be used by easy crop
+	 */
+	protected EasySeed setCrop(Block crop){
 		return this.setCrop(crop, null);
 	}
-	protected EasyFoodSeed setCrop(Block crop, Block soil){
+	protected EasySeed setCrop(Block crop, Block soil){
 		this.crops = crop;
 		this.soilBlockID = soil == null ? Blocks.farmland : soil;
 		return this;
 	}
 	
-	public EasyFoodSeed getSeed() {
+	public EasySeed getSeed() {
 		return this;
 	}
 	
-	private EasyFoodSeed setSoil(Block soil) {
+	private EasySeed setSoil(Block soil) {
 		this.soilBlockID = soil;
 		return this;
 	}
 	
+	@Override
+	public EasySeed setRecipe(Object[] recipe) {
+		super.setRecipe(recipe);
+		return this;
+	}
+	
+	@Override
+	public EasySeed setRecipe(Object[] recipe, boolean isShapeless) {
+		super.setRecipe(recipe, isShapeless);
+		return this;
+	}
+	
+	@Override
 	public boolean onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos, EnumFacing side, float hitX, float hitY, float hitZ)
     {
         if (side != EnumFacing.UP)
@@ -78,4 +92,9 @@ public class EasyFoodSeed extends EasyFood implements IPlantable {
 	public IBlockState getPlant(IBlockAccess world, BlockPos pos) {
 		return this.crops.getDefaultState();
 	}
+	@Override
+	public String getModelPath() {
+		return "seed/" + this.itemModel;
+	}
+
 }

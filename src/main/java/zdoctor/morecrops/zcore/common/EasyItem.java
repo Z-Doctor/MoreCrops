@@ -1,7 +1,5 @@
-package zcore.common;
+package zdoctor.morecrops.zcore.common;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
@@ -12,56 +10,51 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
-import zcore.proxy.CommonProxy;
-
-/**
+import zdoctor.morecrops.zcore.proxy.CommonProxy;
+/** added recipe getter
  * A class to automate the process of putting it into the game and getting its texture
  * @author Z_Doctor
  */
-public class EasyBlock extends Block implements ISubEvent {
+public class EasyItem extends Item implements ISubEvent {
 	// Basic info
-	protected final String blockModel;
+	protected final String itemModel;
 	protected final String modID;
 	// Advance
 	protected Object[] recipe;
 	protected boolean isShapeless;
 	// Constructors
-	public EasyBlock(String model, String mod) {
-		this(model, mod, CreativeTabs.tabDecorations);
+	public EasyItem(String model, String mod) {
+		this(model, mod, CreativeTabs.tabMisc);
 	}
-	public EasyBlock(String model, String mod, CreativeTabs tab) {
-		super(Material.rock);
-		this.blockModel = model;
+	public EasyItem(String model, String mod, CreativeTabs tab) {
+		this.itemModel = model;
 		this.modID = mod;
 		
 		this.setCreativeTab(tab);
 		this.setUnlocalizedName(this.getModelPath());
-		this.setHardness(1.5F);
-		this.setResistance(10.0F);
-		this.setStepSound(soundTypePiston);
 		
 		CommonProxy.subEvent(this);	
 	}
 	
 	/** Override to set a different path */
 	public String getModelPath() {
-		return this.blockModel;
+		return this.itemModel;
 	}
 	/** Override to change meta */
-	public int getBlockMeta() {
+	public int getItemMeta() {
 		return 0;
 	}
 	
 	/** Shaped by default 
 	 * @param recipe - The food's recipe object */
-	public EasyBlock setRecipe(Object[] recipe) {
+	public EasyItem setRecipe(Object[] recipe) {
 		return this.setRecipe(recipe, false);
 	}
 	/**
 	 * @param recipe - The item's recipe
 	 * @param isShapeless - Whether or not the food's recipe is shapeless
 	 */
-	public EasyBlock setRecipe(Object[] recipe, boolean isShapeless) {
+	public EasyItem setRecipe(Object[] recipe, boolean isShapeless) {
 		if(this.recipe == null) {
 			this.recipe = recipe;
 			this.isShapeless = isShapeless;
@@ -69,30 +62,48 @@ public class EasyBlock extends Block implements ISubEvent {
 		return this;
 	}
 	
-	public Item asItem() {
-		return Item.getItemFromBlock(this);
-	}
-	public EasyBlock setNoTab() {
+	public EasyItem setNoTab() {
 		this.setCreativeTab((CreativeTabs)null);
 		return this;
 	}
 	
 	protected void registerRender() {
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(this.asItem(), this.getBlockMeta(), 
+		System.out.println(this.modID + ":" + this.getModelPath());
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(this, this.getItemMeta(), 
 				new ModelResourceLocation(this.modID + ":" + this.getModelPath(), "inventory"));
+	}
+	
+	public boolean registerRecipe() {
+		return true;
+	}
+	
+	public Object[] getRecipe() {
+		return this.recipe;
 	}
 	
 	// Overrides
 	@Override
+	public EasyItem setMaxDamage(int maxDamageIn) {
+		super.setMaxDamage(maxDamageIn);
+		return this;
+	}
+	@Override
+	public EasyItem setMaxStackSize(int maxStackSize) {
+		super.setMaxStackSize(maxStackSize);
+		return this;
+	}
+	
+	@Override
 	public void fire(FMLPreInitializationEvent e) {
-		System.out.println(this.modID + ":" + this.getModelPath());
-		GameRegistry.registerBlock (this, this.getModelPath());
+		System.out.println(modID + ":Registering: " + this.modID + ":" + this.getModelPath());
+		GameRegistry.registerItem(this, this.getModelPath(), this.modID);
+		
 	}
 	@Override
 	public void fire(FMLInitializationEvent e) {
 		if(e.getSide() == Side.CLIENT)
-			this.registerRender();
-		if(this.recipe != null) {
+			registerRender();
+		if(this.recipe != null && this.registerRecipe()) {
 			if(this.isShapeless)
 				GameRegistry.addShapelessRecipe(new ItemStack(this), this.recipe);
 			else
@@ -101,9 +112,4 @@ public class EasyBlock extends Block implements ISubEvent {
 	}
 	@Override
 	public void fire(FMLPostInitializationEvent e) {}
-	/** Override to change material */
-	@Override
-	public Material getMaterial() {
-		return super.getMaterial();
-	}
 }

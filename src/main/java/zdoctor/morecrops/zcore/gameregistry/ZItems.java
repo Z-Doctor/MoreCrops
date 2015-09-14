@@ -1,4 +1,4 @@
-package zcore.gameregistry;
+package zdoctor.morecrops.zcore.gameregistry;
 
 import net.minecraft.item.Item;
 

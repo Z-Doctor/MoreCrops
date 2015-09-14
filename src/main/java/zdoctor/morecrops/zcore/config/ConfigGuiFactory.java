@@ -1,14 +1,19 @@
-package zcore.config;
+package zdoctor.morecrops.zcore.config;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.IModGuiFactory;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import zcore.common.EasyStuff.EventRegistry;
-import zcore.events.CoreEvents;
+import zdoctor.morecrops.zcore.common.EasyItem;
+import zdoctor.morecrops.zcore.common.EasyStuff.GameModifications;
+import zdoctor.morecrops.zcore.common.EasyStuff.RegistryChecker;
+import zdoctor.morecrops.zcore.gameregistry.ZItems;
 
 public class ConfigGuiFactory implements IModGuiFactory {
 	public static Configuration cfig;
@@ -22,9 +27,10 @@ public class ConfigGuiFactory implements IModGuiFactory {
 	public static void syncConfig() {
 		if(cfig.hasChanged()) {
 			cfig.save();
+			Config.sync();
 		}
 	}
-	
+
 	@Override
 	public void initialize(Minecraft minecraftInstance) {
 		// TODO Auto-generated method stub

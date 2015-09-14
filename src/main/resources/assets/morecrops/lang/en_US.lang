@@ -11,3 +11,24 @@ item.seed/EmeraldSeed.name=Emerald Seed
 tile.crop/StrawberryCrop.name=Strawberry Plant
 item.seed/StrawberrySeed.name=Strawberry Seed
 item.food/Strawberry.name=Strawberry
+
+achievement.GetWitherSkull=Finders Keepers
+achievement.GetWitherSkull.desc=Find a Wither Skeleton Skull
+
+achievement.GetNetherStar=Oh the possibilities.
+achievement.GetNetherStar.desc=Find a Nether Star
+
+achievement.CraftDiamondSeed=Oh the possibilities.
+achievement.CraftDiamondSeed.desc=Craft a Diamond Seed
+
+achievement.CraftEmeraldSeed=Economy Crasher
+achievement.CraftEmeraldSeed.desc=Craft an Emerald Seed
+
+achievement.CraftGoldSeed=I can't believe it's not budder!
+achievement.CraftEmeraldSeed.desc=Craft a Gold Seed
+
+achievement.CraftIronSeed=Iron Man
+achievement.CraftIronSeed.desc=Craft an Iron Seed
+
+achievement.GetStrawberry=Sweet Enough For you?
+achievement.GetStrawberry.desc=Find a Strawberry

@@ -1,4 +1,4 @@
-package zcore.common;
+package zdoctor.morecrops.zcore.common;
 
 import java.util.ArrayList;
 
@@ -17,7 +17,7 @@ public class HelperFunctions {
 	 * A collection of function that deal with scanning around an area to find specific blocks and if they are covered.
 	 * @author Z_Doctor
 	 */
-	public static class Scanner {
+	public static class Scanners {
 		/** Looks around the specified block pos for a certain block
 		 * @param block - The block being looked for
 		 * @param worldIn - The world to look in
@@ -50,21 +50,6 @@ public class HelperFunctions {
 					
 			}
 			return false;
-		}
-		/** Changes the blocks within a certain radius to another
-		 * @param worldIn - The world to look in
-		 * @param center - The position of the center block
-		 * @param newState - The state to change them to
-		 * @param radius - Blocks from the center
-		 * @param changeCenter - Should the center block be changed
-		 * @param blockList - The blocks to change
-		 * @return The number of blocks changed
-		 */
-		public static int changeBlocksInRadiusTo(World worldIn, BlockPos center, IBlockState newState, int radius, 
-				boolean changeCenter, Block...blockList) {
-			ArrayList<BlockPos> posList = scanRadiusFor(worldIn, center, radius, blockList, changeCenter);
-			Changers.changeTheseTo(worldIn, newState, posList);
-			return posList.size();
 		}
 		/** Changes the blocks within a certain radius to another
 		 * @param worldIn - The world to look in
@@ -189,6 +174,21 @@ public class HelperFunctions {
 	}
 	
 	public static class Changers {
+		/** Changes the blocks within a certain radius to another
+		 * @param worldIn - The world to look in
+		 * @param center - The position of the center block
+		 * @param newState - The state to change them to
+		 * @param radius - Blocks from the center
+		 * @param changeCenter - Should the center block be changed
+		 * @param blockList - The blocks to change
+		 * @return The number of blocks changed
+		 */
+		public static int changeBlocksInRadiusTo(World worldIn, BlockPos center, IBlockState newState, int radius, 
+				boolean changeCenter, Block...blockList) {
+			ArrayList<BlockPos> posList = Scanners.scanRadiusFor(worldIn, center, radius, blockList, changeCenter);
+			Changers.changeTheseTo(worldIn, newState, posList);
+			return posList.size();
+		}
 		/** Changes the blocks in the position(s) to the new state
 		 * @param worldIn - The world to look in
 		 * @param posList - The position(s)

@@ -1,4 +1,4 @@
-package zcore.config;
+package zdoctor.morecrops.zcore.config;
 
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;

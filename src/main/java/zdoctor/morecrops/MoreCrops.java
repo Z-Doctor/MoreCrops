@@ -9,9 +9,10 @@ import net.minecraftforge.fml.common.event.FMLConstructionEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import zcore.config.ConfigGui;
-import zcore.proxy.CommonProxy;
+import zdoctor.morecrops.achievements.AchievementRegistry;
 import zdoctor.morecrops.crops.Crops;
+import zdoctor.morecrops.zcore.config.ConfigGui;
+import zdoctor.morecrops.zcore.proxy.CommonProxy;
 
 @Mod(modid = MoreCrops.modid, version = MoreCrops.verid, name = MoreCrops.name, 
 	dependencies = MoreCrops.depends,  guiFactory = MoreCrops.config)
@@ -20,9 +21,10 @@ public class MoreCrops {
 	public static final String verid = "1.4";
 	public static final String name = "More Crops";
 	public static final String depends = "";
-	public static final String config = "zcore.config.ConfigGuiFactory";
+	public static final String config = "zdoctor.morecrops.zcore.config.ConfigGuiFactory";
+	
 		
-	@SidedProxy(clientSide="zcore.proxy.ClientProxy", serverSide="zcore.proxy.ServerProxy")
+	@SidedProxy(clientSide="zdoctor.morecrops.zcore.proxy.ClientProxy", serverSide="zdoctor.morecrops.zcore.proxy.ServerProxy")
 	public static CommonProxy proxy;
 	
 	@EventHandler
@@ -38,6 +40,7 @@ public class MoreCrops {
 
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
+		AchievementRegistry.load();
 	    this.proxy.init(e);
 	}
 

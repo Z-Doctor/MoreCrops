@@ -1,4 +1,4 @@
-package zcore.common;
+package zdoctor.morecrops.zcore.common;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;

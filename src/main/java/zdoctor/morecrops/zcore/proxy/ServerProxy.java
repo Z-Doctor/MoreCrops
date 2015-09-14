@@ -1,4 +1,4 @@
-package zcore.proxy;
+package zdoctor.morecrops.zcore.proxy;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
