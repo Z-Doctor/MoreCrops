@@ -1,15 +1,20 @@
 1.4
     - Added Achievements
-    - Plants now only drop one seed with a chance of dropping another seed
+    - Plants Changed
+        - Plants now only drop one seed with a chance of dropping another seed (chances can be changed in config)
+        - Seeds (except Diamond Seeds) now only grow in nether by default (can change in config).
+        - Seeds do not grow in peaceful mode by default (can change in config)
+        - Gold, Iron, and Emerald Plants now grow on Netherrack
+        - No more food items will be added to this mod, because I will make that a seperate mod.
+    - Seeds Changed
+        - Seeds no longer drop when their growing conditions are not met
+        - Seeds whose growing conditions will sit there and not grow
+        - Bone Meal doesn't grow material plants whose growing conditions aren't met (MoreCrops only).
     - Changed Configuration (again)
         - Can now disable each seed recipe individually (no longer requires restart to change)
         - Added some Config Welcome Messages
         - Can now control the drop rate of each seed
-    - Code a bit more organized
-    - Added Glowstone and Nether Quartz seeds (only growable in nether)
-    - Seeds (except Diamond Seeds) now only grow in nether (can change in config).
-    - Seeds do not grow in peacful mode (config item)
-    - No more food items will be added to this mod, because I will make that a seperate mod.
+    - Code a bit more organized, bug fixes
 
 1.3
     - Added Strawberry Crop, Seed and Food Item (More on the way)

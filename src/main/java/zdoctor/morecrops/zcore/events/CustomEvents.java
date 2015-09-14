@@ -73,15 +73,5 @@ public class CustomEvents {
 				}
 			}
 		}
-		@SubscribeEvent
-		public void stopSpawn(WorldEvent.PotentialSpawns ps) {
-			if(ps.isCancelable() && !ps.isCanceled()) {
-				ps.setCanceled(true);
-			}
-		}
-		@SubscribeEvent
-		public void despawnAll(AllowDespawn d) {
-			d.setResult(Result.ALLOW);
-		}
 	}
 }
